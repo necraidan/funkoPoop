@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Captain America - Light Blue",
+        "category": "Marvel Universe",
+        "collection": "Marvel",
+        "number": "159",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-light-blue-exclusive-159.jpg"],
+        "description": "",
+        "magictag": "#cap"
+    },
+    {
+        "name": "Darkest Night Batman",
+        "category": "DC Comics Universe",
+        "collection": "DC Super Heroes",
+        "number": "143",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/batman-darkest-night-exclusive-143.jpg"],
+        "description": "",
+        "magictag": "#batman"
+    },
+    {
+        "name": "Harley Quinn",
+        "category": "DC Comics Universe",
+        "collection": "DC Comics Bombshells",
+        "number": "166",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-166.jpg"],
+        "description": "",
+        "magictag": "#harley"
+    },
+    {
+        "name": "Wonder Woman",
+        "category": "DC Comics Universe",
+        "collection": "DC Comics Bombshells",
+        "number": "167",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/wonder-woman-167.jpg"],
+        "description": "",
+        "magictag": "#wonderwoman"
+    },
+    {
+        "name": "Yami Yugi",
+        "category": "Manga",
+        "collection": "Yu-Gi-Oh!",
+        "number": "387",
+        "picture": ["https://cdn.shopify.com/s/files/1/0552/1401/products/27448_YUGIOH_Yami_Yugi_POP_GLAM.jpg"],
+        "description": "",
+        "magictag": "#yugioh"
+    }
+]

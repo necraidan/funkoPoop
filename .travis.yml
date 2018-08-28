@@ -12,6 +12,9 @@ before_script:
 script:
     - npm run build
 
+after_success:
+    - ls dist/
+
 notifications:
     email:
         on_failure: change

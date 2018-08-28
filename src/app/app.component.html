@@ -3,6 +3,10 @@
   <h1>
     Funko Poop !
   </h1>
+  <h4>
+    Funko Pop List: {{ funkoList.length }} <br/>
+    <!-- Funko Pop Owned: {{ funkoList  }} <br/> -->
+  </h4>
   <!-- <mat-checkbox>Toggle</mat-checkbox> -->
   <form class="search-form" [formGroup]="searchForm">
     <mat-form-field class="input-full-width" floatLabel="auto">
@@ -13,6 +17,7 @@
 <div class="funko-list">
   <mat-card class="funko-card" *ngFor="let funko of funkoFilter">
     <mat-card-header>
+      <div mat-card-avatar class="example-header-image">{{ funko.number }}</div>
       <mat-card-title>{{ funko.name }}</mat-card-title>
       <mat-card-subtitle>{{ funko.category }}/{{ funko.collection }}</mat-card-subtitle>
     </mat-card-header>

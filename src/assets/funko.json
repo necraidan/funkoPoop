@@ -50,5 +50,90 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/wonder-woman-167.jpg"],
         "description": "",
         "magictag": ["#wonderwoman"]
+    },
+    {
+        "name": "Materialising Tardis",
+        "popCategory": "Pop! Television",
+        "category": "Doctor Who",
+        "collection": "Doctor Who",
+        "number": "227",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/tardis-materialising-227.jpg"],
+        "description": "",
+        "magictag": ["#tardis"],
+        "owned": "true",
+        "wanted": "false"
+    },
+    {
+        "name": "Doctor Strange",
+        "popCategory": "Pop!",
+        "category": "Marvel Univers",
+        "collection": "Doctor Strange",
+        "number": "169",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/doctor-strange-169.jpg"],
+        "description": "",
+        "magictag": ["#doctorstrange"],
+        "owned": "true",
+        "wanted": "false"
+    },
+    {
+        "name": "Doctor Strange (Astral Projection)",
+        "popCategory": "Pop!",
+        "category": "Marvel Univers",
+        "collection": "Doctor Strange",
+        "number": "175",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/doctor-strange-astral-projection-exclusive-175.jpg"],
+        "description": "",
+        "magictag": ["#doctorstrange"],
+        "owned": "true",
+        "wanted": "false"
+    },
+    {
+        "name": "Tenth Doctor (Spacesuit)",
+        "popCategory": "Pop! Television",
+        "category": "Doctor Who",
+        "collection": "Doctor Who",
+        "number": "234",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-spacesuit-nycc-234.jpg"],
+        "description": "",
+        "magictag": ["#doctorwho"],
+        "owned": "true",
+        "wanted": "false"
+    },
+    {
+        "name": "Tenth Doctor (3D Glasses)",
+        "popCategory": "Pop! Television",
+        "category": "Doctor Who",
+        "collection": "Doctor Who",
+        "number": "233",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-3d-glasses-exclusive-233.jpg"],
+        "description": "",
+        "magictag": ["#doctorwho"],
+        "owned": "true",
+        "wanted": "false"
+    },
+    {
+        "name": "Tenth Doctor (Regeneration)",
+        "popCategory": "Pop! Television",
+        "category": "Doctor Who",
+        "collection": "Doctor Who",
+        "number": "219",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-regeneration-exclusive-319.jpg"],
+        "description": "",
+        "magictag": ["#doctorwho"],
+        "owned": "true",
+        "wanted": "false"
+    },
+    {
+        "name": "Good Luck Bear (Glitter Chase)",
+        "popCategory": "Pop! Animation",
+        "category": "Care Bears",
+        "collection": "Care Bears",
+        "number": "355",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/good-luck-bear-glitter-chase-355-5866-1.jpg"],
+        "description": "",
+        "magictag": ["#bisounours"],
+        "owned": "true",
+        "wanted": "false",
+        "rarity": ["chase", "glitter"]
     }
 ]

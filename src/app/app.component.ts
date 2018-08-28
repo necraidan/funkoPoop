@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup } from '@angular/forms';
+import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
     selector: 'app-root',
@@ -16,7 +18,7 @@ export class AppComponent implements OnInit {
     funkoList: Funko[];
     funkoFilter: Funko[];
 
-    constructor(private _http: HttpClient) {}
+    constructor(private _http: HttpClient, private _dialog: MatDialog) {}
 
     ngOnInit(): void {
         this._http.get('assets/funko.json').subscribe((res: Funko[]) => {
@@ -35,6 +37,17 @@ export class AppComponent implements OnInit {
             });
         });
     }
+
+    openDetail(funko: Funko) {
+        const dialogRef = this._dialog.open(FunkoDetailComponent, {
+            width: '500px',
+            data: funko
+        });
+
+        dialogRef.afterClosed().subscribe(result => {
+            console.log('The dialog was closed');
+        });
+    }
 }
 
 interface Funko {
@@ -48,4 +61,5 @@ interface Funko {
     magictag?: string[];
     owned?: boolean;
     wanted?: boolean;
+    rarety?: string[];
 }

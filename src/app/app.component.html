@@ -4,8 +4,8 @@
     Funko Poop !
   </h1>
   <h4>
-    Funko Pop List: {{ funkoList.length }} <br/>
-    <!-- Funko Pop Owned: {{ funkoList  }} <br/> -->
+    Funko Pop List: {{ funkoList?.length }} <br/> Funko Pop Owned: {{ funkoList | filterFunko }} <br/> Funko Pop Filtered:
+    {{ funkoFilter.length }} <br/>
   </h4>
   <!-- <mat-checkbox>Toggle</mat-checkbox> -->
   <form class="search-form" [formGroup]="searchForm">
@@ -21,7 +21,7 @@
       <mat-card-title>{{ funko.name }}</mat-card-title>
       <mat-card-subtitle>{{ funko.category }}/{{ funko.collection }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="funko.picture" alt="Photo of {{ funko.name }}">
+    <img mat-card-image [src]="funko.picture" alt="Photo of {{ funko.name }}" (click)="openDetail(funko)">
     <mat-card-content>
       <p>
         {{ funko.description }}

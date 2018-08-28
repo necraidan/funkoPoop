@@ -25,7 +25,14 @@ export class AppComponent implements OnInit {
         });
 
         this.searchForm.get('searchModel').valueChanges.subscribe((val: string) => {
-            this.funkoFilter = this.funkoList.filter(funko => funko.name.toLowerCase().includes(val.toLowerCase()));
+            this.funkoFilter = this.funkoList.filter(funko => {
+                return (
+                    funko.name.toLowerCase().includes(val.toLowerCase()) ||
+                    funko.category.toLowerCase().includes(val.toLowerCase()) ||
+                    funko.collection.toLowerCase().includes(val.toLowerCase()) ||
+                    funko.number.toLowerCase().includes(val.toLowerCase())
+                );
+            });
         });
     }
 }
@@ -35,7 +42,7 @@ interface Funko {
     popCategory?: string;
     category: string;
     collection: string;
-    number: number;
+    number: string;
     picture: string[];
     description: string;
     magictag?: string[];

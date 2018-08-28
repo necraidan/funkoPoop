@@ -13,7 +13,7 @@ script:
     - npm run build
 
 after_success:
-    - ls dist/
+    - cd dist/
 
 notifications:
     email:

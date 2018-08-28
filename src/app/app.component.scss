@@ -10,9 +10,12 @@
 }
 
 .funko-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 310px);
+    grid-gap: 1em;
+    justify-content: space-evenly;
     .funko-card {
-        max-width: 340px;
-        display: inline-block;
-        margin-left: 20px;
+        display: grid;
+        align-content: space-between;
     }
 }

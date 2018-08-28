@@ -18,6 +18,7 @@ import {
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [AppComponent, MainNavComponent],
@@ -33,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
         MatIconModule,
         MatListModule,
         MatInputModule,
-        MatCardModule
+        MatCardModule,
+        ReactiveFormsModule
     ],
     providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],
     bootstrap: [AppComponent]

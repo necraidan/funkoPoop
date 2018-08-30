@@ -7,5 +7,16 @@ body {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to top, #eeeeee, #ebebeb, #e7e7e7, #e4e4e4, #e1e1e1);
+    background: url(http://i.imgur.com/aZty7Mq.png);
+    animation: mymove 4s linear infinite;
+    -webkit-animation: mymove 4s linear infinite;
+    -moz-animation: mymove 4s linear infinite;
+}
+@keyframes mymove {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 40% 0;
+    }
 }

@@ -7,7 +7,7 @@ body {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url(http://i.imgur.com/aZty7Mq.png);
+    background: url(assets/cloud.png);
     animation: mymove 4s linear infinite;
     -webkit-animation: mymove 4s linear infinite;
     -moz-animation: mymove 4s linear infinite;

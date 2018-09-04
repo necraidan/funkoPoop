@@ -135,5 +135,57 @@
         "owned": "true",
         "wanted": "false",
         "rarity": ["chase", "glitter"]
+    },
+    {
+        "name": "Thanos 10\"",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Avengers Infinity War",
+        "number": "308",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/thanos-10-308-6171-1.jpg", "https://stashpedia.com/img/funko/5/tiny/thanos-10-308-6171-17.jpg"],
+        "description": "",
+        "magictag": ["#thanos"],
+        "owned": "false",
+        "wanted": "true",
+        "rarity": ["supersize"]
+    },
+    {
+        "name": "Thanos with Throne",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Marvel Stud10s",
+        "number": "331",
+        "picture": ["https://stashpedia.com/img/funko/6/medium/thanos-with-throne-331-6315-1.jpg"],
+        "description": "",
+        "magictag": ["#thanos"],
+        "owned": "false",
+        "wanted": "true",
+        "rarity": ["supersize"]
+    },
+    {
+        "name": "Thanos (Infinity Glow)",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Marvel Stud10s",
+        "number": "296",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/thanos-296-6196-4.jpg"],
+        "description": "",
+        "magictag": ["#thanos"],
+        "owned": "false",
+        "wanted": "true",
+        "rarity": []
+    },
+    {
+        "name": "Interplanetary Batman (2017 Summer Convention Exclusive)",
+        "popCategory": "Pop!",
+        "category": "DC Universe",
+        "collection": "DC Super Heroes",
+        "number": "196",
+        "picture": ["https://i.imgur.com/muwynjC.jpg"],
+        "description": "",
+        "magictag": ["#batman", "#convention"],
+        "owned": "false",
+        "wanted": "true",
+        "rarity": ["convention"]
     }
 ]

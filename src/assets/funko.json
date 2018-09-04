@@ -95,7 +95,7 @@
         "number": "234",
         "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-spacesuit-nycc-234.jpg"],
         "description": "",
-        "magictag": ["#doctorwho"],
+        "magictag": ["#doctor"],
         "owned": "true",
         "wanted": "false"
     },
@@ -107,7 +107,7 @@
         "number": "233",
         "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-3d-glasses-exclusive-233.jpg"],
         "description": "",
-        "magictag": ["#doctorwho"],
+        "magictag": ["#doctor"],
         "owned": "true",
         "wanted": "false"
     },
@@ -119,7 +119,7 @@
         "number": "219",
         "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-regeneration-exclusive-319.jpg"],
         "description": "",
-        "magictag": ["#doctorwho"],
+        "magictag": ["#doctor"],
         "owned": "true",
         "wanted": "false"
     },
@@ -187,5 +187,60 @@
         "owned": "false",
         "wanted": "true",
         "rarity": ["convention"]
+    },
+    {
+        "name": "Nazgul",
+        "popCategory": "Pop! Movies",
+        "category": "Lord of the rings",
+        "collection": "Lord of the rings",
+        "number": "446",
+        "picture": ["https://stashpedia.com/img/funko/2/medium/nazgul-446-4292-1.jpg"],
+        "description": "",
+        "magictag": ["#lotr"],
+        "owned": "true"
+    },
+    {
+        "name": "Bender",
+        "popCategory": "Pop! Animation",
+        "category": "Futurama",
+        "collection": "Futurama",
+        "number": "29",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/bender-29.jpg"],
+        "description": "",
+        "magictag": [],
+        "owned": "true"
+    },
+    {
+        "name": "Captain America",
+        "popCategory": "Pop! Marvel",
+        "category": "Marvel Universe",
+        "collection": "Marvel Universe",
+        "number": "06",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-06.jpg"],
+        "description": "",
+        "magictag": ["#cap"],
+        "owned": "true"
+    },
+    {
+        "name": "Thirteenth Doctor",
+        "popCategory": "Pop! Television",
+        "category": "Doctor Who",
+        "collection": "Doctor Who",
+        "number": "610",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/thirteenth-doctor-619-6671-1.jpg"],
+        "description": "",
+        "magictag": ["#doctor"],
+        "wanted": "true"
+    },
+    {
+        "name": "Porg",
+        "popCategory": "Pop!",
+        "category": "Star Wars",
+        "collection": "Star Wars",
+        "number": "198",
+        "picture": ["https://stashpedia.com/img/funko/3/medium/porg-198-5049-1.jpg"],
+        "description": "",
+        "magictag": ["#sw"],
+        "owned": "true"
     }
 ]

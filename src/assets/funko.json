@@ -242,5 +242,27 @@
         "description": "",
         "magictag": ["#sw"],
         "owned": "true"
+    },
+    {
+        "name": "Cheshire Cat",
+        "popCategory": "Pop!",
+        "category": "Disney",
+        "collection": "Alice in Wonderland",
+        "number": "178",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/cheshire-cat-178.jpg"],
+        "description": "",
+        "magictag": ["#alice", "#cheshire"],
+        "owned": "true"
+    },
+    {
+        "name": "Shadow",
+        "popCategory": "Pop! Games",
+        "category": "Sega",
+        "collection": "Sonic The Hedgehog",
+        "number": "285",
+        "picture": ["https://stashpedia.com/img/funko/3/medium/shadow-285-5604-3.jpg"],
+        "description": "",
+        "magictag": ["#sonic"],
+        "owned": "true"
     }
 ]

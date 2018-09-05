@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup } from '@angular/forms';
 import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 import { MatDialog } from '@angular/material';
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
     selector: 'app-root',
@@ -26,16 +27,19 @@ export class AppComponent implements OnInit {
             this.funkoFilter = Array.from(this.funkoList);
         });
 
-        this.searchForm.get('searchModel').valueChanges.subscribe((val: string) => {
-            this.funkoFilter = this.funkoList.filter(funko => {
-                return (
-                    funko.name.toLowerCase().includes(val.toLowerCase()) ||
-                    funko.category.toLowerCase().includes(val.toLowerCase()) ||
-                    funko.collection.toLowerCase().includes(val.toLowerCase()) ||
-                    funko.number.toLowerCase().includes(val.toLowerCase())
-                );
+        this.searchForm
+            .get('searchModel')
+            .valueChanges.pipe(debounceTime(250))
+            .subscribe((val: string) => {
+                this.funkoFilter = this.funkoList.filter(funko => {
+                    return (
+                        funko.name.toLowerCase().includes(val.toLowerCase()) ||
+                        funko.category.toLowerCase().includes(val.toLowerCase()) ||
+                        funko.collection.toLowerCase().includes(val.toLowerCase()) ||
+                        funko.number.toLowerCase().includes(val.toLowerCase())
+                    );
+                });
             });
-        });
     }
 
     openDetail(funko: Funko) {

@@ -14,7 +14,8 @@ import {
     MAT_LABEL_GLOBAL_OPTIONS,
     MatInputModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatRadioModule
 } from '@angular/material';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
@@ -39,7 +40,8 @@ import { FilterFunkoPipe } from './shared/pipe/filter-funko-pipe.component';
         MatInputModule,
         MatCardModule,
         MatDialogModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MatRadioModule
     ],
     entryComponents: [FunkoDetailComponent],
     providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],

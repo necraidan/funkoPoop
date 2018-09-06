@@ -23,9 +23,11 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilterFunkoPipe } from './shared/pipe/filter-funko-pipe.component';
+import { HeaderComponent } from './header/header.component';
+import { FunkoListComponent } from './funko-list/funko-list.component';
 
 @NgModule({
-    declarations: [AppComponent, MainNavComponent, FunkoDetailComponent, FilterFunkoPipe],
+    declarations: [AppComponent, MainNavComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoListComponent],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,

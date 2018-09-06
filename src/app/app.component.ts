@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormControl, FormGroup } from '@angular/forms';
 import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 import { MatDialog } from '@angular/material';
-import { debounceTime } from 'rxjs/operators';
+import { AsyncSubject } from 'rxjs';
 
 @Component({
     selector: 'app-root',
@@ -12,49 +11,29 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
     title = 'funkoPoop';
-    searchForm = new FormGroup({
-        searchModel: new FormControl('')
-    });
 
-    funkoList: Funko[];
+    funkoList: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
     funkoFilter: Funko[];
 
-    constructor(private _http: HttpClient, private _dialog: MatDialog) {}
+    constructor(private _http: HttpClient) {}
 
     ngOnInit(): void {
         this._http.get('assets/funko.json').subscribe((res: Funko[]) => {
-            this.funkoList = res;
-            this.funkoFilter = Array.from(this.funkoList);
+            console.log('next !');
+            this.funkoList.next(res);
+            this.funkoList.complete();
+            this.funkoFilter = Array.from(res);
         });
-
-        this.searchForm
-            .get('searchModel')
-            .valueChanges.pipe(debounceTime(250))
-            .subscribe((val: string) => {
-                this.funkoFilter = this.funkoList.filter(funko => {
-                    return (
-                        funko.name.toLowerCase().includes(val.toLowerCase()) ||
-                        funko.category.toLowerCase().includes(val.toLowerCase()) ||
-                        funko.collection.toLowerCase().includes(val.toLowerCase()) ||
-                        funko.number.toLowerCase().includes(val.toLowerCase())
-                    );
-                });
-            });
     }
 
-    openDetail(funko: Funko) {
-        const dialogRef = this._dialog.open(FunkoDetailComponent, {
-            width: '500px',
-            data: funko
-        });
 
-        dialogRef.afterClosed().subscribe(result => {
-            console.log('The dialog was closed');
-        });
+
+    updateFunkoFilter(event) {
+        this.funkoFilter = event;
     }
 }
 
-interface Funko {
+export interface Funko {
     name: string;
     popCategory?: string;
     category: string;

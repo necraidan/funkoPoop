@@ -1,0 +1,22 @@
+<div class="header">
+  <h1>
+    Funko Poop !
+  </h1>
+  <h4>
+    <!-- Funko Pop List: {{ funkoList?.length }} <br /> Funko Pop Owned: {{ funkoList | filterFunko }} <br /> Funko Pop Filtered: {{ funkoFilter.length }} <br /> -->
+  </h4>
+  <!-- <mat-checkbox>Toggle</mat-checkbox> -->
+  <form class="search-form" [formGroup]="searchForm">
+    <mat-form-field class="input-full-width" floatLabel="auto">
+      <input matInput placeholder="Your Funko Pop" formControlName="searchModel" />
+      <div>
+        <label>Sort By</label>
+        <mat-radio-group formControlName="sortBy">
+          <mat-radio-button value="all">All</mat-radio-button>
+          <mat-radio-button value="owned">Owned</mat-radio-button>
+          <mat-radio-button value="wanted">Wanted</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </mat-form-field>
+  </form>
+</div>

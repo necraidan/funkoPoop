@@ -18,13 +18,14 @@ import {
     MatRadioModule
 } from '@angular/material';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
+
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilterFunkoPipe } from './shared/pipe/filter-funko-pipe.component';
 import { HeaderComponent } from './header/header.component';
 import { FunkoListComponent } from './funko-list/funko-list.component';
+import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.component';
 
 @NgModule({
     declarations: [AppComponent, MainNavComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoListComponent],

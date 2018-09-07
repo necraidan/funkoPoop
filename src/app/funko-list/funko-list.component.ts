@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Funko } from '../app.component';
 import { MatDialog } from '@angular/material';
-import { FunkoDetailComponent } from '../funko-detail/funko-detail.component';
+import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 
 @Component({
     // tslint:disable-next-line:component-selector

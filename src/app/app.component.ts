@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
-import { MatDialog } from '@angular/material';
 import { AsyncSubject } from 'rxjs';
 
 @Component({
@@ -25,8 +23,6 @@ export class AppComponent implements OnInit {
             this.funkoFilter = Array.from(res);
         });
     }
-
-
 
     updateFunkoFilter(event) {
         this.funkoFilter = event;

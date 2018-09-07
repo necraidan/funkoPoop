@@ -23,22 +23,19 @@ export class HeaderComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {
-        this.searchForm
-            .get('searchModel')
-            .valueChanges.pipe(debounceTime(250))
-            .subscribe((val: string) => {
-                this.funkoList.subscribe(fList => {
-                    this.change.emit(
-                        fList.filter(funko => {
-                            return (
-                                funko.name.toLowerCase().includes(val.toLowerCase()) ||
-                                funko.category.toLowerCase().includes(val.toLowerCase()) ||
-                                funko.collection.toLowerCase().includes(val.toLowerCase()) ||
-                                funko.number.toLowerCase().includes(val.toLowerCase())
-                            );
-                        })
-                    );
-                });
+        this.searchForm.get('searchModel').valueChanges.subscribe((val: string) => {
+            this.funkoList.subscribe(fList => {
+                this.change.emit(
+                    fList.filter(funko => {
+                        return (
+                            funko.name.toLowerCase().includes(val.toLowerCase()) ||
+                            funko.category.toLowerCase().includes(val.toLowerCase()) ||
+                            funko.collection.toLowerCase().includes(val.toLowerCase()) ||
+                            funko.number.toLowerCase().includes(val.toLowerCase())
+                        );
+                    })
+                );
             });
+        });
     }
 }

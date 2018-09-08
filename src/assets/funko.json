@@ -18,8 +18,8 @@
         "picture": ["https://cdn.shopify.com/s/files/1/0552/1401/products/27448_YUGIOH_Yami_Yugi_POP_GLAM.jpg"],
         "description": "",
         "magictag": ["#yugioh"],
-        "owned": "false",
-        "wanted": "true"
+        "owned": false,
+        "wanted": true
     },
     {
         "name": "Darkest Night Batman",
@@ -60,8 +60,8 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/tardis-materialising-227.jpg"],
         "description": "",
         "magictag": ["#tardis"],
-        "owned": "true",
-        "wanted": "false"
+        "owned": true,
+        "wanted": false
     },
     {
         "name": "Doctor Strange",
@@ -72,8 +72,8 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/doctor-strange-169.jpg"],
         "description": "",
         "magictag": ["#doctorstrange"],
-        "owned": "true",
-        "wanted": "false"
+        "owned": true,
+        "wanted": false
     },
     {
         "name": "Doctor Strange (Astral Projection)",
@@ -84,8 +84,8 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/doctor-strange-astral-projection-exclusive-175.jpg"],
         "description": "",
         "magictag": ["#doctorstrange"],
-        "owned": "true",
-        "wanted": "false"
+        "owned": true,
+        "wanted": false
     },
     {
         "name": "Tenth Doctor (Spacesuit)",
@@ -96,8 +96,8 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-spacesuit-nycc-234.jpg"],
         "description": "",
         "magictag": ["#doctor"],
-        "owned": "true",
-        "wanted": "false"
+        "owned": true,
+        "wanted": false
     },
     {
         "name": "Tenth Doctor (3D Glasses)",
@@ -108,8 +108,8 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-3d-glasses-exclusive-233.jpg"],
         "description": "",
         "magictag": ["#doctor"],
-        "owned": "true",
-        "wanted": "false"
+        "owned": true,
+        "wanted": false
     },
     {
         "name": "Tenth Doctor (Regeneration)",
@@ -120,8 +120,8 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/tenth-doctor-regeneration-exclusive-319.jpg"],
         "description": "",
         "magictag": ["#doctor"],
-        "owned": "true",
-        "wanted": "false"
+        "owned": true,
+        "wanted": false
     },
     {
         "name": "Good Luck Bear (Glitter Chase)",
@@ -132,8 +132,8 @@
         "picture": ["https://stashpedia.com/img/funko/4/medium/good-luck-bear-glitter-chase-355-5866-1.jpg"],
         "description": "",
         "magictag": ["#bisounours"],
-        "owned": "true",
-        "wanted": "false",
+        "owned": true,
+        "wanted": false,
         "rarity": ["chase", "glitter"]
     },
     {
@@ -145,8 +145,8 @@
         "picture": ["https://stashpedia.com/img/funko/4/medium/thanos-10-308-6171-1.jpg", "https://stashpedia.com/img/funko/5/tiny/thanos-10-308-6171-17.jpg"],
         "description": "",
         "magictag": ["#thanos"],
-        "owned": "false",
-        "wanted": "true",
+        "owned": false,
+        "wanted": true,
         "rarity": ["supersize"]
     },
     {
@@ -158,8 +158,8 @@
         "picture": ["https://stashpedia.com/img/funko/6/medium/thanos-with-throne-331-6315-1.jpg"],
         "description": "",
         "magictag": ["#thanos"],
-        "owned": "false",
-        "wanted": "true",
+        "owned": false,
+        "wanted": true,
         "rarity": ["supersize"]
     },
     {
@@ -171,8 +171,8 @@
         "picture": ["https://stashpedia.com/img/funko/4/medium/thanos-296-6196-4.jpg"],
         "description": "",
         "magictag": ["#thanos"],
-        "owned": "false",
-        "wanted": "true",
+        "owned": false,
+        "wanted": true,
         "rarity": []
     },
     {
@@ -184,8 +184,8 @@
         "picture": ["https://i.imgur.com/muwynjC.jpg"],
         "description": "",
         "magictag": ["#batman", "#convention"],
-        "owned": "false",
-        "wanted": "true",
+        "owned": false,
+        "wanted": true,
         "rarity": ["convention"]
     },
     {
@@ -197,7 +197,7 @@
         "picture": ["https://stashpedia.com/img/funko/2/medium/nazgul-446-4292-1.jpg"],
         "description": "",
         "magictag": ["#lotr"],
-        "owned": "true"
+        "owned": true
     },
     {
         "name": "Bender",
@@ -208,7 +208,7 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/bender-29.jpg"],
         "description": "",
         "magictag": [],
-        "owned": "true"
+        "owned": true
     },
     {
         "name": "Captain America",
@@ -219,7 +219,7 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-06.jpg"],
         "description": "",
         "magictag": ["#cap"],
-        "owned": "true"
+        "owned": true
     },
     {
         "name": "Thirteenth Doctor",
@@ -230,7 +230,7 @@
         "picture": ["https://stashpedia.com/img/funko/5/medium/thirteenth-doctor-619-6671-1.jpg"],
         "description": "",
         "magictag": ["#doctor"],
-        "wanted": "true"
+        "wanted": true
     },
     {
         "name": "Porg",
@@ -241,6 +241,6 @@
         "picture": ["https://stashpedia.com/img/funko/3/medium/porg-198-5049-1.jpg"],
         "description": "",
         "magictag": ["#sw"],
-        "owned": "true"
+        "owned": true
     }
 ]

@@ -15,7 +15,9 @@ import {
     MatInputModule,
     MatCardModule,
     MatDialogModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule,
+    MatButtonToggleModule
 } from '@angular/material';
 import { MainNavComponent } from './main-nav/main-nav.component';
 
@@ -44,7 +46,9 @@ import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.com
         MatCardModule,
         MatDialogModule,
         ReactiveFormsModule,
-        MatRadioModule
+        MatRadioModule,
+        MatSelectModule,
+        MatButtonToggleModule
     ],
     entryComponents: [FunkoDetailComponent],
     providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],

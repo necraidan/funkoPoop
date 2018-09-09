@@ -1,0 +1,14 @@
+:host {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    grid-gap: 1em;
+    justify-content: space-evenly;
+    .funko-card {
+        display: grid;
+        align-content: space-between;
+
+        img {
+            cursor: pointer;
+        }
+    }
+}

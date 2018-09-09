@@ -1,0 +1,22 @@
+:host {
+    text-align: center;
+
+    mat-toolbar {
+        /*&.primary {
+            font-family: 'Casino 3D Marquee';
+            font-weight: unset;
+            font-size: 25px;
+        }*/
+    }
+
+    .search-form {
+        min-width: 150px;
+        max-width: calc(100vw - 500px);
+        width: 100%;
+        margin: 0 auto;
+
+        .input-full-width {
+            width: 100%;
+        }
+    }
+}

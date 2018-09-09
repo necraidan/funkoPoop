@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">Funko Poop !
+  <form class="search-form" [formGroup]="searchForm">
+    <mat-form-field class="input-full-width" floatLabel="never">
+      <input matInput placeholder="Your Funko Pop" formControlName="searchModel" />
+    </mat-form-field>
+  </form>
+</mat-toolbar>
+<!-- <h4>
+  Funko Pop List: {{ funkoList?.length }} <br /> Funko Pop Owned: {{ funkoList | filterFunko }} <br /> Funko Pop Filtered: {{ funkoFilter.length }} <br />
+</h4> -->
+<!-- <mat-checkbox>Toggle</mat-checkbox> -->
+<mat-toolbar>
+  <form class="extended-form" [formGroup]="searchForm">
+    <mat-button-toggle-group formControlName="aModel">
+      <mat-button-toggle value="all">
+        All
+      </mat-button-toggle>
+      <mat-button-toggle value="owned">
+        Owned
+      </mat-button-toggle>
+      <mat-button-toggle value="wanted">
+        Wanted
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+    <mat-form-field floatPlaceholder="never">
+
+      <mat-select formControlName="cModel">
+        <mat-option *ngFor="let categorie of categories" [value]="categorie">
+          {{categorie}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</mat-toolbar>

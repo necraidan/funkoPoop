@@ -19,7 +19,6 @@ import {
     MatSelectModule,
     MatButtonToggleModule
 } from '@angular/material';
-import { MainNavComponent } from './main-nav/main-nav.component';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
@@ -30,7 +29,7 @@ import { FunkoListComponent } from './funko-list/funko-list.component';
 import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.component';
 
 @NgModule({
-    declarations: [AppComponent, MainNavComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoListComponent],
+    declarations: [AppComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoListComponent],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,

@@ -11,7 +11,8 @@
 <!-- <mat-checkbox>Toggle</mat-checkbox> -->
 <mat-toolbar>
   <form class="extended-form" [formGroup]="searchForm">
-    <mat-button-toggle-group formControlName="aModel">
+    <mat-label>Sort By: </mat-label>
+    <mat-button-toggle-group formControlName="radioModel">
       <mat-button-toggle value="all">
         All
       </mat-button-toggle>
@@ -22,13 +23,22 @@
         Wanted
       </mat-button-toggle>
     </mat-button-toggle-group>
+    <mat-label>Categories: </mat-label>
     <mat-form-field floatPlaceholder="never">
-
-      <mat-select formControlName="cModel">
+      <mat-select formControlName="categorieModel">
         <mat-option *ngFor="let categorie of categories" [value]="categorie">
           {{categorie}}
         </mat-option>
       </mat-select>
     </mat-form-field>
+    <mat-label>Collections: </mat-label>
+    <mat-form-field floatPlaceholder="never">
+      <mat-select formControlName="collectionModel">
+        <mat-option *ngFor="let collection of collections" [value]="collection">
+          {{collection}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-fab color="primary" (click)="resetForm()">Reset</button>
   </form>
 </mat-toolbar>

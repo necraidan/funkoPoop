@@ -24,7 +24,7 @@
     {
         "name": "Darkest Night Batman",
         "popCategory": "Pop! Heroes",
-        "category": "DC Comics Universe",
+        "category": "DC Universe",
         "collection": "DC Super Heroes",
         "number": "143",
         "picture": ["https://stashpedia.com/img/funko/1/medium/batman-darkest-night-exclusive-143.jpg"],
@@ -34,17 +34,18 @@
     {
         "name": "Harley Quinn",
         "popCategory": "Pop! Heroes",
-        "category": "DC Comics Universe",
+        "category": "DC Universe",
         "collection": "DC Comics Bombshells",
         "number": "166",
         "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-166.jpg"],
         "description": "",
-        "magictag": ["#harley"]
+        "magictag": ["#harley"],
+        "owned": true
     },
     {
         "name": "Wonder Woman",
         "popCategory": "Pop! Heroes",
-        "category": "DC Comics Universe",
+        "category": "DC Universe",
         "collection": "DC Comics Bombshells",
         "number": "167",
         "picture": ["https://stashpedia.com/img/funko/1/medium/wonder-woman-167.jpg"],
@@ -66,7 +67,7 @@
     {
         "name": "Doctor Strange",
         "popCategory": "Pop!",
-        "category": "Marvel Univers",
+        "category": "Marvel Universe",
         "collection": "Doctor Strange",
         "number": "169",
         "picture": ["https://stashpedia.com/img/funko/1/medium/doctor-strange-169.jpg"],
@@ -78,7 +79,7 @@
     {
         "name": "Doctor Strange (Astral Projection)",
         "popCategory": "Pop!",
-        "category": "Marvel Univers",
+        "category": "Marvel Universe",
         "collection": "Doctor Strange",
         "number": "175",
         "picture": ["https://stashpedia.com/img/funko/1/medium/doctor-strange-astral-projection-exclusive-175.jpg"],
@@ -243,7 +244,6 @@
         "magictag": ["#sw"],
 
         "owned": true
-
     },
     {
         "name": "Cheshire Cat",

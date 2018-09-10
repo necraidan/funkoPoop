@@ -1,8 +1,7 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Funko } from '../app.component';
-import { debounceTime } from 'rxjs/operators';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { AsyncSubject } from 'rxjs';
+import { Funko } from '../app.component';
 
 @Component({
     // tslint:disable-next-line:component-selector
@@ -12,6 +11,8 @@ import { AsyncSubject } from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
     categories: string[];
+    collections: string[];
+
     @Input()
     funkoList: AsyncSubject<Funko[]>;
 
@@ -20,8 +21,9 @@ export class HeaderComponent implements OnInit {
 
     searchForm = new FormGroup({
         searchModel: new FormControl(''),
-        aModel: new FormControl('all'),
-        cModel: new FormControl('')
+        radioModel: new FormControl('all'),
+        categorieModel: new FormControl('All'),
+        collectionModel: new FormControl('All')
     });
     constructor() {}
 
@@ -29,17 +31,29 @@ export class HeaderComponent implements OnInit {
         this.funkoList.subscribe(fList => {
             this.categories = Object.keys(
                 fList.reduce((cats, f) => {
-                    console.log({ cats, f });
                     cats[f.category] = true;
                     return cats;
                 }, {})
             ).sort();
 
-            console.log(this.categories);
+            this.collections = Object.keys(
+                fList.reduce((coll, f) => {
+                    coll[f.collection] = true;
+                    return coll;
+                }, {})
+            ).sort();
+
+            this.categories.unshift('All');
+            this.collections.unshift('All');
         });
+
         this.searchForm.valueChanges.subscribe(() => {
             this._filtering();
         });
+    }
+
+    resetForm() {
+        this.searchForm.patchValue({ radioModel: 'all', categorieModel: 'All', collectionModel: 'All' });
     }
 
     private _filtering() {
@@ -47,12 +61,13 @@ export class HeaderComponent implements OnInit {
             this.change.emit(
                 fList
                     .filter(f => {
-                        return this.searchForm.get('aModel').value === 'all' ? true : f[this.searchForm.get('aModel').value];
+                        return this.searchForm.get('radioModel').value === 'all' ? true : f[this.searchForm.get('radioModel').value];
                     })
                     .filter(f => {
-                        console.log({ cat: f.category, value: this.searchForm.get('cModel') });
-                        console.log(f.category === this.searchForm.get('cModel').value);
-                        return f.category === this.searchForm.get('cModel').value;
+                        return this.searchForm.get('categorieModel').value === 'All' ? true : f.category === this.searchForm.get('categorieModel').value;
+                    })
+                    .filter(f => {
+                        return this.searchForm.get('collectionModel').value === 'All' ? true : f.collection === this.searchForm.get('collectionModel').value;
                     })
                     .filter(funko => {
                         const val = this.searchForm.get('searchModel').value;

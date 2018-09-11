@@ -1,7 +1,8 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild, Renderer2 } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AsyncSubject } from 'rxjs';
 import { Funko } from '../app.component';
+import { MatToolbar } from '@angular/material';
 
 @Component({
     // tslint:disable-next-line:component-selector
@@ -10,6 +11,9 @@ import { Funko } from '../app.component';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+    @ViewChild('extendForm')
+    extendForm: MatToolbar;
+
     categories: string[];
     collections: string[];
 
@@ -25,7 +29,7 @@ export class HeaderComponent implements OnInit {
         categorieModel: new FormControl('All'),
         collectionModel: new FormControl('All')
     });
-    constructor() {}
+    constructor(private _renderer: Renderer2) {}
 
     ngOnInit() {
         this.funkoList.subscribe(fList => {
@@ -54,6 +58,14 @@ export class HeaderComponent implements OnInit {
 
     resetForm() {
         this.searchForm.patchValue({ radioModel: 'all', categorieModel: 'All', collectionModel: 'All' });
+    }
+
+    toggleExtendForm() {
+        if (this.extendForm._elementRef.nativeElement.classList.contains('open')) {
+            this._renderer.removeClass(this.extendForm._elementRef.nativeElement, 'open');
+        } else {
+            this._renderer.addClass(this.extendForm._elementRef.nativeElement, 'open');
+        }
     }
 
     private _filtering() {

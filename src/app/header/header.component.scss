@@ -22,6 +22,11 @@
 
     .under-toolbar {
         justify-content: space-evenly;
+        display: none;
+
+        &.open {
+            display: flex;
+        }
 
         .extended-form {
             flex-direction: row;

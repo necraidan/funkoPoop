@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this._http.get('assets/funko.json').subscribe((res: Funko[]) => {
-            console.log('next !');
             // tslint:disable:curly
             const resTri = res.sort((a, b) => {
                 if (a.category > b.category) return 1;

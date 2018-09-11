@@ -12,6 +12,11 @@
             cursor: pointer;
         }
 
+        .mat-chip.mat-standard-chip {
+            background-color: #616161;
+            color: white;
+        }
+
         &.owned {
             background-color: #d7d7d7;
         }

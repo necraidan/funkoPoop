@@ -12,8 +12,8 @@
       {{ funko.description }}
     </p>
   </mat-card-content>
-  <!-- <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions> -->
+
+  <mat-chip-list>
+    <mat-chip *ngFor="let rarity of funko.rarity">{{ rarity }}</mat-chip>
+  </mat-chip-list>
 </mat-card>

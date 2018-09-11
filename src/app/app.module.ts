@@ -17,7 +17,8 @@ import {
     MatDialogModule,
     MatRadioModule,
     MatSelectModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatChipsModule
 } from '@angular/material';
 
 import { LayoutModule } from '@angular/cdk/layout';
@@ -47,7 +48,8 @@ import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.com
         ReactiveFormsModule,
         MatRadioModule,
         MatSelectModule,
-        MatButtonToggleModule
+        MatButtonToggleModule,
+        MatChipsModule
     ],
     entryComponents: [FunkoDetailComponent],
     providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],

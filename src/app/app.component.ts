@@ -10,7 +10,7 @@ import { AsyncSubject } from 'rxjs';
 export class AppComponent implements OnInit {
     title = 'funkoPoop';
 
-    funkoList: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
+    funkoList$: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
     funkoFilter: Funko[];
 
     constructor(private _http: HttpClient) {}
@@ -18,8 +18,8 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this._http.get('assets/funko.json').subscribe((res: Funko[]) => {
             console.log('next !');
-            this.funkoList.next(res);
-            this.funkoList.complete();
+            this.funkoList$.next(res);
+            this.funkoList$.complete();
             this.funkoFilter = Array.from(res);
         });
     }

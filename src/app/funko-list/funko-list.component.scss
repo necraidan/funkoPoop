@@ -11,5 +11,13 @@
         img {
             cursor: pointer;
         }
+
+        &.owned {
+            background-color: #d7d7d7;
+        }
+
+        &.wanted {
+            background-color: #ff9191;
+        }
     }
 }

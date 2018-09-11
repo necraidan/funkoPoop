@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
     collections: string[];
 
     @Input()
-    funkoList: AsyncSubject<Funko[]>;
+    funkoList$: AsyncSubject<Funko[]>;
 
     @Output()
     change: EventEmitter<Funko[]> = new EventEmitter<Funko[]>();
@@ -32,7 +32,7 @@ export class HeaderComponent implements OnInit {
     constructor(private _renderer: Renderer2) {}
 
     ngOnInit() {
-        this.funkoList.subscribe(fList => {
+        this.funkoList$.subscribe(fList => {
             this.categories = Object.keys(
                 fList.reduce((cats, f) => {
                     cats[f.category] = true;
@@ -69,7 +69,7 @@ export class HeaderComponent implements OnInit {
     }
 
     private _filtering() {
-        this.funkoList.subscribe(fList => {
+        this.funkoList$.subscribe(fList => {
             this.change.emit(
                 fList
                     .filter(f => {

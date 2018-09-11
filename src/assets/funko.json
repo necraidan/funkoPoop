@@ -266,5 +266,27 @@
         "description": "",
         "magictag": ["#sonic"],
         "owned": true
+    },
+    {
+        "name": "Balrog 6\"",
+        "popCategory": "Pop! Movies",
+        "category": "Lord of the rings",
+        "collection": "Lord of the rings",
+        "number": "448",
+        "picture": ["https://stashpedia.com/img/funko/2/medium/balrog-6-448-4294-1.jpg"],
+        "description": "",
+        "magictag": ["#lotr"],
+        "owned": true
+    },
+    {
+        "name": "Rapunzel",
+        "popCategory": "Pop!",
+        "category": "Disney",
+        "collection": "Disney",
+        "number": "223",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/rapunzel-dancing-223.jpg"],
+        "description": "",
+        "magictag": ["#disney"],
+        "owned": true
     }
 ]

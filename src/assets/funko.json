@@ -288,5 +288,27 @@
         "description": "",
         "magictag": ["#disney"],
         "owned": true
+    },
+    {
+        "name": "Carey Price",
+        "popCategory": "Pop! Hockey",
+        "category": "NHL",
+        "collection": "Canadiens de Montréal",
+        "number": "06",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/carey-price-06.jpg"],
+        "description": "",
+        "magictag": ["#montréal", ""#hockey"],
+        "owned": true
+    },
+    {
+        "name": "Deadpool as Bob Ross",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Marvel",
+        "number": "319",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/deadpool-bob-ross-6164-2.jpg"],
+        "description": "",
+        "magictag": ["#deadpool"],
+        "owned": true
     }
 ]

@@ -29,7 +29,8 @@
         "number": "143",
         "picture": ["https://stashpedia.com/img/funko/1/medium/batman-darkest-night-exclusive-143.jpg"],
         "description": "",
-        "magictag": ["#batman"]
+        "magictag": ["#batman"], 
+        "owned": true
     },
     {
         "name": "Harley Quinn",

@@ -345,5 +345,49 @@
         "description": "",
         "magictag": ["#tortue"],
         "owned": true
+    },
+    {
+        "name": "Donatello",
+        "popCategory": "Pop! Television",
+        "category": "Teenage Mutant Ninja Turtles",
+        "collection": "Teenage Mutant Ninja Turtles",
+        "number": "60",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/donatello-60.jpg"],
+        "description": "",
+        "magictag": ["#tortue"],
+        "owned": true
+    },
+    {
+        "name": "Donatello",
+        "popCategory": "Pop! Television",
+        "category": "Teenage Mutant Ninja Turtles",
+        "collection": "Teenage Mutant Ninja Turtles",
+        "number": "60",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/donatello-metallic-sdcc-60.jpg"],
+        "description": "",
+        "magictag": ["#tortue"],
+        "wanted": true,
+        "rarity": ["Metallic"]
+    },
+    {
+        "name": "Splinter",
+        "popCategory": "Pop! Television",
+        "category": "Teenage Mutant Ninja Turtles",
+        "collection": "Teenage Mutant Ninja Turtles",
+        "number": "64",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/splinter-64.jpg"],
+        "description": "",
+        "magictag": ["#tortue"]
+    },
+    {
+        "name": "Shredder",
+        "popCategory": "Pop! Television",
+        "category": "Teenage Mutant Ninja Turtles",
+        "collection": "Teenage Mutant Ninja Turtles",
+        "number": "65",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/shredder-65.jpg"],
+        "description": "",
+        "magictag": ["#tortue"],
+        "wanted": true
     }
 ]

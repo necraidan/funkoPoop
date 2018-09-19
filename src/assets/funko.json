@@ -312,5 +312,38 @@
         "description": "",
         "magictag": ["#deadpool"],
         "owned": true
+    },
+    {
+        "name": "Leonardo",
+        "popCategory": "Pop! Television",
+        "category": "Teenage Mutant Ninja Turtles",
+        "collection": "Teenage Mutant Ninja Turtles",
+        "number": "63",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/leonardo-63.jpg"],
+        "description": "",
+        "magictag": ["#tortue"],
+        "owned": true
+    },
+    {
+        "name": "Michelangelo",
+        "popCategory": "Pop! Television",
+        "category": "Teenage Mutant Ninja Turtles",
+        "collection": "Teenage Mutant Ninja Turtles",
+        "number": "62",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/michelangelo-62.jpg"],
+        "description": "",
+        "magictag": ["#tortue"],
+        "owned": true
+    },
+    {
+        "name": "Raphael",
+        "popCategory": "Pop! Television",
+        "category": "Teenage Mutant Ninja Turtles",
+        "collection": "Teenage Mutant Ninja Turtles",
+        "number": "61",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/raphael-61.jpg"],
+        "description": "",
+        "magictag": ["#tortue"],
+        "owned": true
     }
 ]

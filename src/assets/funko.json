@@ -390,4 +390,15 @@
         "magictag": ["#tortue"],
         "wanted": true
     }
+    ,
+    {
+        "name": "Lara Croft",
+        "popCategory": "Pop! Games",
+        "category": "Tomb Raider",
+        "collection": "Tomb Raider",
+        "number": "333",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/lara-croft-333-6029-2.jpg"],
+        "description": "",
+        "owned": true
+    }
 ]

@@ -51,7 +51,9 @@ export class HeaderComponent implements OnInit {
             this.collections.unshift('All');
         });
 
-        this.searchForm.valueChanges.subscribe(() => {
+        this.searchForm.valueChanges.subscribe((...arg) => {
+            window.history.pushState(undefined, 'query', 'search?searchModel=' + arg[0].searchModel);
+            console.log(arg);
             this._filtering();
         });
     }

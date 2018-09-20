@@ -28,6 +28,7 @@ import { FilterFunkoPipe } from './shared/pipe/filter-funko-pipe.component';
 import { HeaderComponent } from './header/header.component';
 import { FunkoListComponent } from './funko-list/funko-list.component';
 import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [AppComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoListComponent],
@@ -49,7 +50,8 @@ import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.com
         MatRadioModule,
         MatSelectModule,
         MatButtonToggleModule,
-        MatChipsModule
+        MatChipsModule,
+        RouterModule.forRoot([])
     ],
     entryComponents: [FunkoDetailComponent],
     providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],

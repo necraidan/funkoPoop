@@ -389,16 +389,45 @@
         "description": "",
         "magictag": ["#tortue"],
         "wanted": true
-    }
-    ,
+    },
     {
         "name": "Lara Croft",
         "popCategory": "Pop! Games",
-        "category": "Tomb Raider",
+        "category": "Games",
         "collection": "Tomb Raider",
         "number": "333",
         "picture": ["https://stashpedia.com/img/funko/4/medium/lara-croft-333-6029-2.jpg"],
         "description": "",
         "owned": true
+    },
+    {
+        "name": "Seto Kaiba",
+        "popCategory": "Pop! Animation",
+        "category": "Manga",
+        "collection": "Yu-Gi-Oh!",
+        "number": "388",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/seto-kaiba-388-6589-1.jpg"],
+        "description": "",
+        "wanted": true
+    },
+    {
+        "name": "Blue-Eyes White Dragon",
+        "popCategory": "Pop! Animation",
+        "category": "Manga",
+        "collection": "Yu-Gi-Oh!",
+        "number": "389",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/blue-eyes-white-dragon-389-6590-1.jpg"],
+        "description": "",
+        "wanted": true
+    },
+    {
+        "name": "Dark Magician Girl",
+        "popCategory": "Pop! Animation",
+        "category": "Manga",
+        "collection": "Yu-Gi-Oh!",
+        "number": "390",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/dark-magician-girl-390-6591-1.jpg"],
+        "description": "",
+        "wanted": true
     }
 ]

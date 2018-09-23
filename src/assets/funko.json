@@ -10,7 +10,7 @@
         "magictag": ["#cap"],
         "wanted": true
     },{
-        "name": "Niffler 10"",
+        "name": "Niffler 10",
         "popCategory": "Pop!",
         "category": "Marvel Universe",
         "collection": "Marvel",
@@ -18,7 +18,7 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-light-blue-exclusive-159.jpg"],
         "description": "",
         "magictag": ["#cap"],
-        "wanted": true
+        "owned": true
     },
     {
         "name": "Yami Yugi",

@@ -7,10 +7,10 @@ body {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    /*background: url(assets/cloud.png);
+    background: url(assets/cloud.png);
     animation: mymove 4s linear infinite;
     -webkit-animation: mymove 4s linear infinite;
-    -moz-animation: mymove 4s linear infinite;*/
+    -moz-animation: mymove 4s linear infinite;
 }
 @keyframes mymove {
     0% {

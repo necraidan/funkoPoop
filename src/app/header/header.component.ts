@@ -52,8 +52,8 @@ export class HeaderComponent implements OnInit {
             this.collections.unshift('All');
         });
 
-        this.searchForm.valueChanges.subscribe((...arg) => {
-            this._pushState(arg);
+        this.searchForm.valueChanges.subscribe(values => {
+            this._pushState(values);
 
             setTimeout(() => {
                 this._filtering();
@@ -105,6 +105,8 @@ export class HeaderComponent implements OnInit {
     }
 
     private _pushState(arg) {
-        return arg[0].query ? window.history.pushState(undefined, 'query', 'search?query=' + arg[0].query) : window.history.pushState(undefined, 'query', '');
+        return Array.isArray(arg) && arg[0].query
+            ? window.history.pushState(undefined, 'query', 'search?query=' + arg[0].query)
+            : window.history.pushState(undefined, 'query', '');
     }
 }

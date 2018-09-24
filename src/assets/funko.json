@@ -9,7 +9,8 @@
         "description": "",
         "magictag": ["#cap"],
         "wanted": true
-    },{
+    },
+    {
         "name": "Niffler 10",
         "popCategory": "Pop!",
         "category": "Marvel Universe",
@@ -40,7 +41,7 @@
         "number": "143",
         "picture": ["https://stashpedia.com/img/funko/1/medium/batman-darkest-night-exclusive-143.jpg"],
         "description": "",
-        "magictag": ["#batman"], 
+        "magictag": ["#batman"],
         "owned": true
     },
     {
@@ -439,5 +440,14 @@
         "picture": ["https://stashpedia.com/img/funko/5/medium/dark-magician-girl-390-6591-1.jpg"],
         "description": "",
         "wanted": true
+    },
+    {
+        "name": "Austin Powers (Red Suit)",
+        "popCategory": "Pop! Movies",
+        "category": "Movie",
+        "collection": "Austin Powers",
+        "number": "643",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/austin-powers-red-suit-7033-1.jpg"],
+        "description": ""
     }
 ]

@@ -28,10 +28,13 @@ import { FilterFunkoPipe } from './shared/pipe/filter-funko-pipe.component';
 import { HeaderComponent } from './header/header.component';
 import { FunkoListComponent } from './funko-list/funko-list.component';
 import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.component';
+import { RouterModule } from '@angular/router';
+import { FunkoRoutingModule } from './funko-routing.module';
 
 @NgModule({
     declarations: [AppComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoListComponent],
     imports: [
+        FunkoRoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,

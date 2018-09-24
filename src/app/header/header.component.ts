@@ -61,7 +61,6 @@ export class HeaderComponent implements OnInit {
         });
 
         this._activatedRoute.queryParams.subscribe((params: Params) => {
-            console.log(params);
             // tslint:disable-next-line:no-unused-expression
             params.query && this.searchForm.patchValue(params);
         });

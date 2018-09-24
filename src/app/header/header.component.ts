@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { AsyncSubject } from 'rxjs';
 import { Funko } from '../app.component';
 import { MatToolbar } from '@angular/material';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
     // tslint:disable-next-line:component-selector
@@ -24,12 +25,12 @@ export class HeaderComponent implements OnInit {
     change: EventEmitter<Funko[]> = new EventEmitter<Funko[]>();
 
     searchForm = new FormGroup({
-        searchModel: new FormControl(''),
+        query: new FormControl(''),
         radioModel: new FormControl('all'),
         categorieModel: new FormControl('All'),
         collectionModel: new FormControl('All')
     });
-    constructor(private _renderer: Renderer2) {}
+    constructor(private _renderer: Renderer2, private _activatedRoute: ActivatedRoute) {}
 
     ngOnInit() {
         this.funkoList$.subscribe(fList => {
@@ -52,9 +53,17 @@ export class HeaderComponent implements OnInit {
         });
 
         this.searchForm.valueChanges.subscribe((...arg) => {
-            window.history.pushState(undefined, 'query', 'search?searchModel=' + arg[0].searchModel);
-            console.log(arg);
-            this._filtering();
+            this._pushState(arg);
+
+            setTimeout(() => {
+                this._filtering();
+            }, 0);
+        });
+
+        this._activatedRoute.queryParams.subscribe((params: Params) => {
+            console.log(params);
+            // tslint:disable-next-line:no-unused-expression
+            params.query && this.searchForm.patchValue(params);
         });
     }
 
@@ -84,7 +93,7 @@ export class HeaderComponent implements OnInit {
                         return this.searchForm.get('collectionModel').value === 'All' ? true : f.collection === this.searchForm.get('collectionModel').value;
                     })
                     .filter(funko => {
-                        const val = this.searchForm.get('searchModel').value;
+                        const val = this.searchForm.get('query').value;
                         return (
                             funko.name.toLowerCase().includes(val.toLowerCase()) ||
                             funko.category.toLowerCase().includes(val.toLowerCase()) ||
@@ -94,5 +103,9 @@ export class HeaderComponent implements OnInit {
                     })
             );
         });
+    }
+
+    private _pushState(arg) {
+        return arg[0].query ? window.history.pushState(undefined, 'query', 'search?query=' + arg[0].query) : window.history.pushState(undefined, 'query', '');
     }
 }

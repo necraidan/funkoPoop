@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { AsyncSubject } from 'rxjs';
 
@@ -14,11 +13,7 @@ export class AppComponent implements OnInit {
     funkoList$: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
     funkoFilter: Funko[];
 
-    constructor(private _http: HttpClient, private _activatedRoute: ActivatedRoute) {
-        this._activatedRoute.queryParams.subscribe((params: Params) => {
-            console.log(params); // Print the parameter to the console.
-        });
-    }
+    constructor(private _http: HttpClient) {}
 
     ngOnInit(): void {
         this._http.get('assets/funko.json').subscribe((res: Funko[]) => {

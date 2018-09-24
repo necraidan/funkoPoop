@@ -4,7 +4,7 @@
   </div> -->
   <form class="search-form" [formGroup]="searchForm">
     <mat-form-field class="input-full-width" floatLabel="never">
-      <input matInput placeholder="Your Funko Pop" formControlName="searchModel" />
+      <input matInput placeholder="Your Funko Pop" formControlName="query" />
     </mat-form-field>
   </form>
   <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="toggleExtendForm()" *ngIf="true">

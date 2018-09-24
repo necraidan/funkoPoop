@@ -29,10 +29,12 @@ import { HeaderComponent } from './header/header.component';
 import { FunkoListComponent } from './funko-list/funko-list.component';
 import { FunkoDetailComponent } from './funko-list/funko-detail/funko-detail.component';
 import { RouterModule } from '@angular/router';
+import { FunkoRoutingModule } from './funko-routing.module';
 
 @NgModule({
     declarations: [AppComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoListComponent],
     imports: [
+        FunkoRoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
@@ -50,8 +52,7 @@ import { RouterModule } from '@angular/router';
         MatRadioModule,
         MatSelectModule,
         MatButtonToggleModule,
-        MatChipsModule,
-        RouterModule.forRoot([])
+        MatChipsModule
     ],
     entryComponents: [FunkoDetailComponent],
     providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],

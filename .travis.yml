@@ -6,8 +6,8 @@ branches:
     only:
         - dev
 cache:
-  directories:
-    - node_modules
+    directories:
+        - node_modules
 
 before_script:
     - npm install -g @angular/cli
@@ -16,7 +16,7 @@ script:
     - npm run build
 
 after_success:
-    - cd dist/
+    - npm run after-deploy
 
 notifications:
     email:

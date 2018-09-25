@@ -105,8 +105,6 @@ export class HeaderComponent implements OnInit {
     }
 
     private _pushState(arg) {
-        return Array.isArray(arg) && arg[0].query
-            ? window.history.pushState(undefined, 'query', 'search?query=' + arg[0].query)
-            : window.history.pushState(undefined, 'query', '');
+        return arg.query ? window.history.pushState(undefined, 'query', 'search?query=' + arg.query) : window.history.pushState(undefined, 'query', '');
     }
 }

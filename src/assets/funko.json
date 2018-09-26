@@ -449,5 +449,35 @@
         "number": "643",
         "picture": ["https://stashpedia.com/img/funko/5/medium/austin-powers-red-suit-7033-1.jpg"],
         "description": ""
+    },
+    {
+        "name": "Ken",
+        "popCategory": "Pop! Games",
+        "category": "Game",
+        "collection": "Street Fitghter",
+        "number": "138",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/ken-138.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Harvey Bullock",
+        "popCategory": "Pop! Heroes",
+        "category": "DC Universe",
+        "collection": "Gotham",
+        "number": "76",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/harvey-bullock-76.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Bruce Wayne",
+        "popCategory": "Pop! Heroes",
+        "category": "DC Universe",
+        "collection": "Gotham",
+        "number": "77",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/bruce-wayne-77.jpg"],
+        "description": "",
+        "owned": true
     }
 ]

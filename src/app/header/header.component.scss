@@ -36,5 +36,14 @@
             width: 100%;
             align-items: center;
         }
+
+        @media (max-width: 900px) {
+            height: unset;
+            padding: 10px 0;
+
+            .extended-form {
+                flex-direction: column;
+            }
+        }
     }
 }

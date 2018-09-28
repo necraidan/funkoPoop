@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">Funko Poop !
-  <!-- <div class="info">
-    Funko Pop List: {{ funkoList$?.length | async }}
-  </div> -->
+  <div class="info">
+    {{ owned }}
+  </div>
   <form class="search-form" [formGroup]="searchForm">
     <mat-form-field class="input-full-width" floatLabel="never">
       <input matInput placeholder="Your Funko Pop" formControlName="query" />

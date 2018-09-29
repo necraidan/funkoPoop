@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
     @ViewChild('extendForm')
     extendForm: MatToolbar;
 
+    owned: number;
     categories: string[];
     collections: string[];
 
@@ -34,6 +35,8 @@ export class HeaderComponent implements OnInit {
 
     ngOnInit() {
         this.funkoList$.subscribe(fList => {
+            this.owned = fList.filter(elt => elt.owned).length
+            ;
             this.categories = Object.keys(
                 fList.reduce((cats, f) => {
                     cats[f.category] = true;

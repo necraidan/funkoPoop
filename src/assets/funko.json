@@ -493,5 +493,36 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/bugs-413.jpg"],
         "description": "",
         "owned": true
+    },
+    {
+        "name": "Crash Bandicoot (Black/White)",
+        "popCategory": "Pop! Games",
+        "category": "Sony",
+        "collection": "Crash Bandicoot",
+        "number": "273",
+        "picture": ["https://stashpedia.com/img/funko/3/medium/crash-bandicoot-blackwhite-chase-273-5183-1.jpg"],
+        "description": "",
+        "owned": true,
+        "rarity": ["chase"]
+    },
+    {
+        "name": "Wonder Woman",
+        "popCategory": "Pop! Heroes",
+        "category": "DC Universe",
+        "collection": "Wonder Woman",
+        "number": "172",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/wonder-woman-172.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Nearly Headless Nick",
+        "popCategory": "Pop!",
+        "category": "Harry Potter",
+        "collection": "Harry Potter",
+        "number": "62",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/nearly-headless-nick-glow-62-6577-1.jpg"],
+        "description": "",
+        "owned": true
     }
 ]

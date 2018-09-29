@@ -18,7 +18,6 @@
         "number": "159",
         "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-light-blue-exclusive-159.jpg"],
         "description": "",
-        "magictag": ["#cap"],
         "owned": true
     },
     {
@@ -471,6 +470,27 @@
         "collection": "Gotham",
         "number": "77",
         "picture": ["https://stashpedia.com/img/funko/1/medium/bruce-wayne-77.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Pluto",
+        "popCategory": "Pop!",
+        "category": "Disney",
+        "collection": "Disney",
+        "number": "287",
+        "picture": ["https://stashpedia.com/img/funko/6/medium/pluto-287-4536-7.jpg"],
+        "description": "",
+        "owned": true,
+        "rarity": ["Disney Treasure"]
+    },
+    {
+        "name": "Bugs",
+        "popCategory": "Pop! Movies",
+        "category": "Looney Tunes",
+        "collection": "Space Jam",
+        "number": "413",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/bugs-413.jpg"],
         "description": "",
         "owned": true
     }

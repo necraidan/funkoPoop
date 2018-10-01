@@ -524,5 +524,15 @@
         "picture": ["https://stashpedia.com/img/funko/5/medium/nearly-headless-nick-glow-62-6577-1.jpg"],
         "description": "",
         "owned": true
+    },
+    {
+        "name": "Thor",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Avengers Infinity War",
+        "number": "286",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/thor-286-6185-1.jpg"],
+        "description": "",
+        "owned": true
     }
 ]

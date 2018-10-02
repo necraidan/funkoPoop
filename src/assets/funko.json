@@ -265,7 +265,7 @@
     {
         "name": "Shadow",
         "popCategory": "Pop! Games",
-        "category": "Sega",
+        "category": "Video Game",
         "collection": "Sonic The Hedgehog",
         "number": "285",
         "picture": ["https://stashpedia.com/img/funko/3/medium/shadow-285-5604-3.jpg"],
@@ -397,7 +397,7 @@
     {
         "name": "Lara Croft",
         "popCategory": "Pop! Games",
-        "category": "Games",
+        "category": "Video Game",
         "collection": "Tomb Raider",
         "number": "333",
         "picture": ["https://stashpedia.com/img/funko/4/medium/lara-croft-333-6029-2.jpg"],
@@ -446,8 +446,8 @@
     {
         "name": "Ken",
         "popCategory": "Pop! Games",
-        "category": "Game",
-        "collection": "Street Fitghter",
+        "category": "Video Game",
+        "collection": "Street Fighter",
         "number": "138",
         "picture": ["https://stashpedia.com/img/funko/1/medium/ken-138.jpg"],
         "description": "",
@@ -497,7 +497,7 @@
     {
         "name": "Crash Bandicoot (Black/White)",
         "popCategory": "Pop! Games",
-        "category": "Sony",
+        "category": "Video Game",
         "collection": "Crash Bandicoot",
         "number": "273",
         "picture": ["https://stashpedia.com/img/funko/3/medium/crash-bandicoot-blackwhite-chase-273-5183-1.jpg"],
@@ -532,6 +532,46 @@
         "collection": "Avengers Infinity War",
         "number": "286",
         "picture": ["https://stashpedia.com/img/funko/4/medium/thor-286-6185-1.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Plastic Man",
+        "popCategory": "Pop! Heroes",
+        "category": "DC Universe",
+        "collection": "DC Super Heroes",
+        "number": "165",
+        "picture": ["https://stashpedia.com/img/funko/2/medium/plastic-man-165-3845-1.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Classic Superman",
+        "popCategory": "Pop! Heroes",
+        "category": "DC Universe",
+        "collection": "DC Superman",
+        "number": "165",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/superman-classic-exclusive-159.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Gotenks",
+        "popCategory": "Pop! Animation",
+        "category": "Dragon Ball",
+        "collection": "Dragon Ball",
+        "number": "319",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/gotenks-5355-6.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Sara Ryder - N7",
+        "popCategory": "Pop! Games",
+        "category": "Video Game",
+        "collection": "Mass Effect Andromed",
+        "number": "187",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/gotenks-5355-6.jpg"],
         "description": "",
         "owned": true
     }

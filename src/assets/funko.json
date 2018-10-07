@@ -574,5 +574,15 @@
         "picture": ["https://stashpedia.com/img/funko/4/medium/gotenks-5355-6.jpg"],
         "description": "",
         "owned": true
+    },
+    {
+        "name": "Supreme Leader Snoke",
+        "popCategory": "Pop!",
+        "category": "Star Wars",
+        "collection": "Star Wars",
+        "number": "199",
+        "picture": ["https://stashpedia.com/img/funko/3/medium/supreme-leader-snoke-199-5044-1.jpg"],
+        "description": "",
+        "owned": true
     }
 ]

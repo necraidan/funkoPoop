@@ -9,6 +9,17 @@
         "description": "",
         "magictag": ["#cap"],
         "wanted": true
+    }, {
+        "name": "Doctor Strange (Gold)",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Marvel Stud10s",
+        "number": "439",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/doctor-strange-chrome-gold-439-7232-1.jpg"],
+        "description": "",
+        "magictag": ["#strange"],
+        "rarity": ["metallic"],
+        "wanted": true
     },
     {
         "name": "Niffler 10",

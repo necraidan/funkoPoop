@@ -1,5 +1,17 @@
 [
     {
+        "name": "Thanos (Chrome) (Purple)",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Avengers Infinity War",
+        "number": "415",
+        "picture": ["https://stashpedia.com/img/funko/5/medium/thanos-chrome-purple-7221-1.jpg"],
+        "description": "",
+        "magictag": ["#thanos"],
+        "wanted": true,
+        "rarity": ["metalic"]
+    },
+    {
         "name": "Captain America (Light Blue)",
         "popCategory": "Pop!",
         "category": "Marvel Universe",
@@ -9,7 +21,8 @@
         "description": "",
         "magictag": ["#cap"],
         "wanted": true
-    }, {
+    },
+    {
         "name": "Doctor Strange (Gold)",
         "popCategory": "Pop!",
         "category": "Marvel Universe",

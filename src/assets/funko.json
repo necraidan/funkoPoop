@@ -436,7 +436,7 @@
         "number": "388",
         "picture": ["https://stashpedia.com/img/funko/5/medium/seto-kaiba-388-6589-1.jpg"],
         "description": "",
-        "wanted": true
+        "owned": true
     },
     {
         "name": "Blue-Eyes White Dragon",
@@ -456,7 +456,7 @@
         "number": "390",
         "picture": ["https://stashpedia.com/img/funko/5/medium/dark-magician-girl-390-6591-1.jpg"],
         "description": "",
-        "wanted": true
+        "owned": true
     },
     {
         "name": "Austin Powers (Red Suit)",
@@ -608,5 +608,5 @@
         "picture": ["https://stashpedia.com/img/funko/3/medium/supreme-leader-snoke-199-5044-1.jpg"],
         "description": "",
         "owned": true
-    }
+    },
 ]

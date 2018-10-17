@@ -173,7 +173,10 @@
         "category": "Marvel Universe",
         "collection": "Avengers Infinity War",
         "number": "308",
-        "picture": ["https://stashpedia.com/img/funko/4/medium/thanos-10-308-6171-1.jpg", "https://stashpedia.com/img/funko/5/tiny/thanos-10-308-6171-17.jpg"],
+        "picture": [
+            "https://stashpedia.com/img/funko/4/medium/thanos-10-308-6171-1.jpg",
+            "https://stashpedia.com/img/funko/5/tiny/thanos-10-308-6171-17.jpg"
+        ],
         "description": "",
         "magictag": ["#thanos"],
         "owned": false,
@@ -608,5 +611,5 @@
         "picture": ["https://stashpedia.com/img/funko/3/medium/supreme-leader-snoke-199-5044-1.jpg"],
         "description": "",
         "owned": true
-    },
+    }
 ]

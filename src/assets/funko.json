@@ -53,7 +53,7 @@
         "picture": ["https://cdn.shopify.com/s/files/1/0552/1401/products/27448_YUGIOH_Yami_Yugi_POP_GLAM.jpg"],
         "description": "",
         "magictag": ["#yugioh"],
-        "wanted": true
+        "owned": true
     },
     {
         "name": "Darkest Night Batman",
@@ -173,10 +173,7 @@
         "category": "Marvel Universe",
         "collection": "Avengers Infinity War",
         "number": "308",
-        "picture": [
-            "https://stashpedia.com/img/funko/4/medium/thanos-10-308-6171-1.jpg",
-            "https://stashpedia.com/img/funko/5/tiny/thanos-10-308-6171-17.jpg"
-        ],
+        "picture": ["https://stashpedia.com/img/funko/4/medium/thanos-10-308-6171-1.jpg", "https://stashpedia.com/img/funko/5/tiny/thanos-10-308-6171-17.jpg"],
         "description": "",
         "magictag": ["#thanos"],
         "owned": false,
@@ -449,7 +446,7 @@
         "number": "389",
         "picture": ["https://stashpedia.com/img/funko/5/medium/blue-eyes-white-dragon-389-6590-1.jpg"],
         "description": "",
-        "wanted": true
+        "owned": true
     },
     {
         "name": "Dark Magician Girl",
@@ -609,6 +606,36 @@
         "collection": "Star Wars",
         "number": "199",
         "picture": ["https://stashpedia.com/img/funko/3/medium/supreme-leader-snoke-199-5044-1.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Daenerys Targaryen",
+        "popCategory": "Pop!",
+        "category": "Game of Thrones",
+        "collection": "Game of Thrones",
+        "number": "03",
+        "picture": ["https://stashpedia.com/img/funko/2/medium/daenerys-targaryen-03-629-2.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Loki",
+        "popCategory": "Pop!",
+        "category": "Marvel Universe",
+        "collection": "Thor Ragnarok",
+        "number": "242",
+        "picture": ["https://stashpedia.com/img/funko/2/medium/loki-242-4712-1.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "Adipose (Glow)",
+        "popCategory": "Pop! Television",
+        "category": "Doctor Who",
+        "collection": "Doctor Who",
+        "number": "240",
+        "picture": ["https://stashpedia.com/img/funko/4/medium/adipose-glow-240-1830-5.jpg"],
         "description": "",
         "owned": true
     }

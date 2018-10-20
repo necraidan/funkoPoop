@@ -1,7 +1,7 @@
 :host {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 240px);
+    grid-template-columns: repeat(auto-fit, 300px);
     grid-gap: 1em;
     justify-content: space-evenly;
     .funko-card {
@@ -10,6 +10,10 @@
 
         img {
             cursor: pointer;
+        }
+
+        .mat-card-header {
+            justify-content: space-between;
         }
 
         .mat-chip.mat-standard-chip {

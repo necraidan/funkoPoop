@@ -638,5 +638,25 @@
         "picture": ["https://stashpedia.com/img/funko/4/medium/adipose-glow-240-1830-5.jpg"],
         "description": "",
         "owned": true
+    },
+    {
+        "name": "Ninth Doctor",
+        "popCategory": "Pop! Television",
+        "category": "Doctor Who",
+        "collection": "Doctor Who",
+        "number": "294",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/ninth-doctor-294.jpg"],
+        "description": "",
+        "owned": true
+    },
+    {
+        "name": "The Joker",
+        "popCategory": "Pop! Heroes",
+        "category": "DC Universe",
+        "collection": "Batman - The Dark Knight Returns",
+        "number": "294",
+        "picture": ["https://stashpedia.com/img/funko/1/medium/the-joker-the-dark-knight-returns-exclusive-116.jpg"],
+        "description": "",
+        "owned": true
     }
 ]

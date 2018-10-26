@@ -637,7 +637,8 @@
         "number": "240",
         "picture": ["https://stashpedia.com/img/funko/4/medium/adipose-glow-240-1830-5.jpg"],
         "description": "",
-        "owned": true
+        "owned": true,
+                "rarity": ["glow"]
     },
     {
         "name": "Ninth Doctor",
@@ -658,5 +659,17 @@
         "picture": ["https://stashpedia.com/img/funko/1/medium/the-joker-the-dark-knight-returns-exclusive-116.jpg"],
         "description": "",
         "owned": true
+    },    
+    {
+        "name": "Porg (flocked)",
+        "popCategory": "Pop!",
+        "category": "Star Wars",
+        "collection": "Star Wars",
+        "number": "198",
+        "picture": ["https://stashpedia.com/img/funko/3/medium/porg-flocked-198-5053-1.jpg"],
+        "description": "",
+        "magictag": ["#sw"],
+        "owned": true,
+                "rarity": ["flocked"]
     }
 ]

@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 const routes: Routes = [{ path: '', pathMatch: 'full', component: AppComponent }, { path: 'search', component: AppComponent }];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class FunkoRoutingModule {}

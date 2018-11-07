@@ -1,30 +1,30 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Funko } from '../app.component';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
+import { Funko } from '../app.component';
 import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 
 @Component({
-    // tslint:disable-next-line:component-selector
-    selector: 'funko-list',
-    templateUrl: './funko-list.component.html',
-    styleUrls: ['./funko-list.component.scss']
+  // tslint:disable-next-line:component-selector
+  selector: 'funko-list',
+  templateUrl: './funko-list.component.html',
+  styleUrls: ['./funko-list.component.scss']
 })
 export class FunkoListComponent implements OnInit {
-    @Input()
-    funkoFilter: Funko[];
+  @Input()
+  funkoFilter: Funko[];
 
-    constructor(private _dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {}
 
-    ngOnInit() {}
+  ngOnInit() {}
 
-    openDetail(funko: Funko) {
-        const dialogRef = this._dialog.open(FunkoDetailComponent, {
-            width: '500px',
-            data: funko
-        });
+  openDetail(funko: Funko) {
+    const dialogRef = this.dialog.open(FunkoDetailComponent, {
+      width: '500px',
+      data: funko
+    });
 
-        dialogRef.afterClosed().subscribe(() => {
-            console.log('The dialog was closed');
-        });
-    }
+    dialogRef.afterClosed().subscribe(() => {
+      console.log('The dialog was closed');
+    });
+  }
 }

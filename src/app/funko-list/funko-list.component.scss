@@ -11,6 +11,8 @@
 
     img {
       cursor: pointer;
+      height: 35vh;
+      object-fit: cover;
     }
 
     .mat-card-header {
@@ -32,13 +34,13 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 680px) {
   :host {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (min-width: 770px) and (max-width: 920px) {
+@media screen and (min-width: 680px) and (max-width: 920px) {
   :host {
     grid-template-columns: repeat(2, 1fr);
   }

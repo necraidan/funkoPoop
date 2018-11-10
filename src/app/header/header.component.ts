@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
     categorieModel: new FormControl('All'),
     collectionModel: new FormControl('All')
   });
-  constructor(private _renderer: Renderer2, private _activatedRoute: ActivatedRoute) {}
+  constructor(private renderer: Renderer2, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit() {
     this.funkoList$.subscribe(fList => {
@@ -62,7 +62,7 @@ export class HeaderComponent implements OnInit {
       }, 0);
     });
 
-    this._activatedRoute.queryParams.subscribe((params: Params) => {
+    this.activatedRoute.queryParams.subscribe((params: Params) => {
       // tslint:disable-next-line:no-unused-expression
       params.query && this.searchForm.patchValue(params);
     });
@@ -74,9 +74,9 @@ export class HeaderComponent implements OnInit {
 
   toggleExtendForm() {
     if (this.extendForm._elementRef.nativeElement.classList.contains('open')) {
-      this._renderer.removeClass(this.extendForm._elementRef.nativeElement, 'open');
+      this.renderer.removeClass(this.extendForm._elementRef.nativeElement, 'open');
     } else {
-      this._renderer.addClass(this.extendForm._elementRef.nativeElement, 'open');
+      this.renderer.addClass(this.extendForm._elementRef.nativeElement, 'open');
     }
   }
 

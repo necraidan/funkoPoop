@@ -13,10 +13,10 @@ export class AppComponent implements OnInit {
   funkoList$: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
   funkoFilter: Funko[];
 
-  constructor(private _http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this._http.get('assets/funko.json').subscribe((res: Funko[]) => {
+    this.http.get('assets/funko.json').subscribe((res: Funko[]) => {
       // tslint:disable:curly
       const resTri = res.sort((a, b) => {
         if (a.category > b.category) return 1;

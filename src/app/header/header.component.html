@@ -1,43 +1,38 @@
-<mat-toolbar color="primary">Funko Poop !
-  <div class="info">
-    {{ owned }}
-  </div>
+<mat-toolbar color="primary"
+  >Funko Poop !
+  <div class="info">{{ owned }}</div>
   <form class="search-form" [formGroup]="searchForm">
     <mat-form-field class="input-full-width" floatLabel="never">
       <input matInput placeholder="Your Funko Pop" formControlName="query" />
     </mat-form-field>
   </form>
-  <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="toggleExtendForm()" *ngIf="true">
+  <button type="button" aria-label="List view" mat-icon-button (click)="toggleView('grid')"><mat-icon>grid_on</mat-icon></button>
+  <button type="button" aria-label="List view" mat-icon-button (click)="toggleView('list')"><mat-icon>list</mat-icon></button>
+  <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="toggleExtendForm()">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
 </mat-toolbar>
-<!-- <h4>
-  Funko Pop List: {{ funkoList?.length }} <br /> Funko Pop Owned: {{ funkoList | filterFunko }} <br /> Funko Pop Filtered: {{ funkoFilter.length }} <br />
-</h4> -->
+<!--
+  <h4>
+    Funko Pop List: {{ funkoList?.length }} <br /> Funko Pop Owned: {{ funkoList | filterFunko }} <br /> Funko Pop Filtered: {{ funkoFilter.length }} <br />
+  </h4>
+-->
 <!-- <mat-checkbox>Toggle</mat-checkbox> -->
 <mat-toolbar class="under-toolbar" #extendForm>
   <form class="extended-form" [formGroup]="searchForm">
     <div>
       <mat-label>Sort By: </mat-label>
       <mat-button-toggle-group formControlName="radioModel">
-        <mat-button-toggle value="all">
-          All
-        </mat-button-toggle>
-        <mat-button-toggle value="owned">
-          Owned
-        </mat-button-toggle>
-        <mat-button-toggle value="wanted">
-          Wanted
-        </mat-button-toggle>
+        <mat-button-toggle value="all"> All </mat-button-toggle>
+        <mat-button-toggle value="owned"> Owned </mat-button-toggle>
+        <mat-button-toggle value="wanted"> Wanted </mat-button-toggle>
       </mat-button-toggle-group>
     </div>
     <div>
       <mat-label>Categories: </mat-label>
       <mat-form-field floatPlaceholder="never">
         <mat-select formControlName="categorieModel">
-          <mat-option *ngFor="let categorie of categories" [value]="categorie">
-            {{categorie}}
-          </mat-option>
+          <mat-option *ngFor="let categorie of categories" [value]="categorie"> {{ categorie }} </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
@@ -45,9 +40,7 @@
       <mat-label>Collections: </mat-label>
       <mat-form-field floatPlaceholder="never">
         <mat-select formControlName="collectionModel">
-          <mat-option *ngFor="let collection of collections" [value]="collection">
-            {{collection}}
-          </mat-option>
+          <mat-option *ngFor="let collection of collections" [value]="collection"> {{ collection }} </mat-option>
         </mat-select>
       </mat-form-field>
     </div>

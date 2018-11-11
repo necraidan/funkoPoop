@@ -5,9 +5,9 @@ import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'funko-list',
-  templateUrl: './funko-list.component.html',
-  styleUrls: ['./funko-list.component.scss']
+  selector: 'funko-grid',
+  templateUrl: './funko-grid.component.html',
+  styleUrls: ['./funko-grid.component.scss']
 })
 export class FunkoListComponent implements OnInit {
   @Input()

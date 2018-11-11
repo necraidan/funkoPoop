@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   collections: string[];
 
   isGridView = true;
+  isQuery: boolean;
 
   @Input()
   funkoList$: AsyncSubject<Funko[]>;
@@ -61,6 +62,7 @@ export class HeaderComponent implements OnInit {
     });
 
     this.searchForm.valueChanges.subscribe(values => {
+      this.isQuery = !!values.query;
       this.pushState(values);
 
       setTimeout(() => {
@@ -69,6 +71,7 @@ export class HeaderComponent implements OnInit {
     });
 
     this.activatedRoute.queryParams.subscribe((params: Params) => {
+      this.isQuery = !!params.query;
       // tslint:disable-next-line:no-unused-expression
       params.query && this.searchForm.patchValue(params);
     });
@@ -90,6 +93,10 @@ export class HeaderComponent implements OnInit {
   toggleView() {
     this.isGridView = !this.isGridView;
     this.gridView.emit(this.isGridView);
+  }
+
+  clearInput() {
+    this.searchForm.patchValue({ query: '' });
   }
 
   private filtering() {

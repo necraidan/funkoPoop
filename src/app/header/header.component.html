@@ -4,6 +4,9 @@
   <form class="search-form" [formGroup]="searchForm">
     <mat-form-field class="input-full-width" floatLabel="never">
       <input matInput placeholder="Your Funko Pop" formControlName="query" />
+      <button mat-button *ngIf="isQuery" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
+        <mat-icon>close</mat-icon>
+      </button>
     </mat-form-field>
   </form>
   <button type="button" aria-label="Change the view" mat-icon-button (click)="toggleView()">

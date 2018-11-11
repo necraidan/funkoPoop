@@ -86,6 +86,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  // TODO: Add the view mode in the query param
   toggleView() {
     this.isGridView = !this.isGridView;
     this.gridView.emit(this.isGridView);

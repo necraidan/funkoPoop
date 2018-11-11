@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url(assets/cloud.png);
+  // animation: mymove 4s linear infinite;
+  // -webkit-animation: mymove 4s linear infinite;
+  // -moz-animation: mymove 4s linear infinite;
+}
+@keyframes mymove {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 40% 0;
+  }
+}
+
+@font-face {
+  font-family: 'Casino 3D Marquee';
+  src: url('/assets/font/Casino3DMarquee-Regular.eot');
+  src: url('/assets/font/Casino3DMarquee-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/font/Casino3DMarquee-Regular.woff2') format('woff2'), url('/assets/font/Casino3DMarquee-Regular.woff') format('woff'),
+    url('/assets/font/Casino3DMarquee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

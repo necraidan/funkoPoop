@@ -1,4 +1,4 @@
-<mat-card class="funko-card" [class.owned]="funko.owned" [class.wanted]="funko.wanted" *ngFor="let funko of funkoFilter">
+<mat-card class="funko-card" [class.owned]="funko.owned" [class.wanted]="funko.wanted" *ngFor="let funko of funkoFilterList">
   <img mat-card-image [src]="funko.picture[0]" alt="Photo of {{ funko.name }}" (click)="openDetail(funko)" />
   <mat-card-header>
     <div mat-card-avatar class="example-header-image">{{ funko.number }}</div>

@@ -4,6 +4,7 @@ import { MatToolbar } from '@angular/material';
 import { ActivatedRoute, Params } from '@angular/router';
 import { AsyncSubject } from 'rxjs';
 import { Funko } from '../app.component';
+import { FunkoFilterService } from './../shared/service/funko-filter.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -19,11 +20,16 @@ export class HeaderComponent implements OnInit {
   categories: string[];
   collections: string[];
 
+  isGridView = true;
+
   @Input()
   funkoList$: AsyncSubject<Funko[]>;
 
   @Output()
   change: EventEmitter<Funko[]> = new EventEmitter<Funko[]>();
+
+  @Output()
+  gridView: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   searchForm = new FormGroup({
     query: new FormControl(''),
@@ -31,7 +37,7 @@ export class HeaderComponent implements OnInit {
     categorieModel: new FormControl('All'),
     collectionModel: new FormControl('All')
   });
-  constructor(private renderer: Renderer2, private activatedRoute: ActivatedRoute) {}
+  constructor(private renderer: Renderer2, private activatedRoute: ActivatedRoute, private funkoFilterService: FunkoFilterService) {}
 
   ngOnInit() {
     this.funkoList$.subscribe(fList => {
@@ -80,33 +86,37 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  toggleView() {
+    this.isGridView = !this.isGridView;
+    this.gridView.emit(this.isGridView);
+  }
+
   private filtering() {
-    this.funkoList$.subscribe(fList => {
-      this.change.emit(
-        fList
-          .filter(f => {
-            return this.searchForm.get('radioModel').value === 'all' ? true : f[this.searchForm.get('radioModel').value];
-          })
-          .filter(f => {
-            return this.searchForm.get('categorieModel').value === 'All'
-              ? true
-              : f.category === this.searchForm.get('categorieModel').value;
-          })
-          .filter(f => {
-            return this.searchForm.get('collectionModel').value === 'All'
-              ? true
-              : f.collection === this.searchForm.get('collectionModel').value;
-          })
-          .filter(funko => {
-            const val = this.searchForm.get('query').value;
-            return (
-              funko.name.toLowerCase().includes(val.toLowerCase()) ||
-              funko.category.toLowerCase().includes(val.toLowerCase()) ||
-              funko.collection.toLowerCase().includes(val.toLowerCase()) ||
-              funko.number.toLowerCase().includes(val.toLowerCase())
-            );
-          })
-      );
+    this.funkoList$.subscribe(list => {
+      const fList = list
+        .filter(f => {
+          return this.searchForm.get('radioModel').value === 'all' ? true : f[this.searchForm.get('radioModel').value];
+        })
+        .filter(f => {
+          return this.searchForm.get('categorieModel').value === 'All' ? true : f.category === this.searchForm.get('categorieModel').value;
+        })
+        .filter(f => {
+          return this.searchForm.get('collectionModel').value === 'All'
+            ? true
+            : f.collection === this.searchForm.get('collectionModel').value;
+        })
+        .filter(funko => {
+          const val = this.searchForm.get('query').value;
+          return (
+            funko.name.toLowerCase().includes(val.toLowerCase()) ||
+            funko.category.toLowerCase().includes(val.toLowerCase()) ||
+            funko.collection.toLowerCase().includes(val.toLowerCase()) ||
+            funko.number.toLowerCase().includes(val.toLowerCase())
+          );
+        });
+
+      this.change.emit(fList);
+      this.funkoFilterService.funkoFiler$.next(fList);
     });
   }
 

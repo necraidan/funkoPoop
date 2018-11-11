@@ -6,8 +6,9 @@
       <input matInput placeholder="Your Funko Pop" formControlName="query" />
     </mat-form-field>
   </form>
-  <button type="button" aria-label="List view" mat-icon-button (click)="toggleView('grid')"><mat-icon>grid_on</mat-icon></button>
-  <button type="button" aria-label="List view" mat-icon-button (click)="toggleView('list')"><mat-icon>list</mat-icon></button>
+  <button type="button" aria-label="Change the view" mat-icon-button (click)="toggleView()">
+    <mat-icon>{{ isGridView ? 'grid_on' : 'list' }}</mat-icon>
+  </button>
   <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="toggleExtendForm()">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
   </button>

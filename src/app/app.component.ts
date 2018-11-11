@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AsyncSubject } from 'rxjs';
+import { FunkoFilterService } from './shared/service/funko-filter.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,9 @@ export class AppComponent implements OnInit {
   funkoList$: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
   funkoFilter: Funko[];
 
-  constructor(private http: HttpClient) {}
+  isGridView = true;
+
+  constructor(private http: HttpClient, private funkoFilterService: FunkoFilterService) {}
 
   ngOnInit(): void {
     this.http.get('assets/funko.json').subscribe((res: Funko[]) => {
@@ -30,6 +33,7 @@ export class AppComponent implements OnInit {
       // tslint:enable:curly
       this.funkoList$.next(resTri);
       this.funkoList$.complete();
+      this.funkoFilterService.funkoFiler$.next(resTri);
       this.funkoFilter = Array.from(resTri);
     });
   }

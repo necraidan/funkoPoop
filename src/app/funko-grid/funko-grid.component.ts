@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { Funko } from '../app.component';
+import { FunkoFilterService } from './../shared/service/funko-filter.service';
 import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 
 @Component({
@@ -9,13 +10,16 @@ import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
   templateUrl: './funko-grid.component.html',
   styleUrls: ['./funko-grid.component.scss']
 })
-export class FunkoListComponent implements OnInit {
-  @Input()
-  funkoFilter: Funko[];
+export class FunkoGridComponent implements OnInit {
+  funkoFilterList: Funko[];
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, private funkoFilterService: FunkoFilterService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.funkoFilterService.funkoFiler$.subscribe(list => {
+      this.funkoFilterList = list;
+    });
+  }
 
   openDetail(funko: Funko) {
     const dialogRef = this.dialog.open(FunkoDetailComponent, {

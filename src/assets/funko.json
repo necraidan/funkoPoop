@@ -598,7 +598,8 @@
     "number": "62",
     "picture": ["https://stashpedia.com/img/funko/5/medium/nearly-headless-nick-glow-62-6577-1.jpg"],
     "description": "",
-    "owned": true
+    "owned": true,
+    "rarity": ["glow"]
   },
   {
     "name": "Thor",
@@ -681,7 +682,7 @@
     "owned": true
   },
   {
-    "name": "Adipose (Glow)",
+    "name": "Adipose",
     "popCategory": "Pop! Television",
     "category": "Doctor Who",
     "collection": "Doctor Who",

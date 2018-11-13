@@ -1,4 +1,16 @@
 [  
+   {
+    "name": "Loki",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Marvel Stud10s",
+    "number": "376",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/loki-gold-chrome-376-6689-1.jpg"],
+    "description": "",
+    "magictag": ["#loki"],
+    "rarity": ["metallic"],
+    "owned": true
+  },
   {
     "name": "Wall-E",
     "popCategory": "Pop!",
@@ -42,6 +54,18 @@
     "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-light-blue-exclusive-159.jpg"],
     "description": "",
     "magictag": ["#cap"],
+    "wanted": true
+  },
+  {
+    "name": "Doctor Strange",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Marvel Stud10s",
+    "number": "439",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/doctor-strange-chrome-gold-439-7232-1.jpg"],
+    "description": "",
+    "magictag": ["#strange"],
+    "rarity": ["metallic"],
     "wanted": true
   },
   {

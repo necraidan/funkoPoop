@@ -1,5 +1,5 @@
-[      
-   {
+[
+  {
     "name": "Vashta Nerada",
     "popCategory": "Pop! Television",
     "category": "Doctor Who",
@@ -11,7 +11,7 @@
     "rarity": ["glow"],
     "owned": true
   },
-   {
+  {
     "name": "Elliot Masked",
     "popCategory": "Pop! Television",
     "category": "Mr Robot",
@@ -23,7 +23,7 @@
     "rarity": ["2017 Summer Convention Exclusive"],
     "owned": true
   },
-   {
+  {
     "name": "Loki",
     "popCategory": "Pop!",
     "category": "Marvel Universe",
@@ -34,6 +34,61 @@
     "magictag": ["#loki"],
     "rarity": ["metallic"],
     "owned": true
+  },
+  {
+    "name": "Kanan",
+    "popCategory": "Pop!",
+    "category": "Star Wars",
+    "collection": "Star Wars Rebels",
+    "number": "132",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/kanan-rebels-132.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Ted [The Geek]",
+    "popCategory": "Pop! Movies",
+    "category": "Sixteen Candies",
+    "collection": "Sixteen Candies",
+    "number": "139",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/ted-the-geek-139.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Pedro",
+    "popCategory": "Pop! Movies",
+    "category": "Napoleon Dynamite",
+    "collection": "Napoleon Dynamite",
+    "number": "205",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/pedro-205.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Wall-E",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Disney",
+    "number": "45",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/wall-e-45.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Leelo",
+    "popCategory": "Pop! Movies",
+    "category": "The Fifth Element",
+    "collection": "The Fifth Element",
+    "number": "193",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/leeloo-straps-193.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": []
   },
   {
     "name": "Wall-E",
@@ -114,7 +169,7 @@
     "description": "",
     "owned": true,
     "rarity": ["supersized"],
-    "magictag": ["#harrypotter","#hp","#fantasticbeasts"]
+    "magictag": ["#harrypotter", "#hp", "#fantasticbeasts"]
   },
   {
     "name": "Yami Yugi",
@@ -296,6 +351,126 @@
     "rarity": ["convention"]
   },
   {
+    "name": "Poison Ivy",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "DC Comics Bombshelss",
+    "number": "224",
+    "picture": ["https://stashpedia.com/img/funko/3/medium/poison-ivy-224-5283-1.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "wanted": true,
+    "rarity": []
+  },
+  {
+    "name": "Poison Ivy Impopster",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "DC Comics Super Heroes",
+    "number": "128",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/poison-ivy-impopster-128.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "wanted": true,
+    "rarity": []
+  },
+  {
+    "name": "Harley Quinn [Gown]",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Suicide Squad",
+    "number": "108",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-gown-exclusive-108.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Harley Quinn",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Suicide Squad",
+    "number": "97",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-97.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Harley Quinn with Mallet",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "DC Comics",
+    "number": "45",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-with-mallet-45.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Harley Quinn",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman Arkham Asylum",
+    "number": "54",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-arkham-asylum-54.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Harley Quinn",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman Arkham Knight",
+    "number": "72",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-arkham-knight-72.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Harley Quinn",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "DC Super Heroes",
+    "number": "45",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/harley-quinn-with-mallet-black-white-exclusive-45.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Poison Ivy",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman The Animated Series",
+    "number": "157",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/poison-ivy-animated-series-157.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Batman",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman Arkham Knight",
+    "number": "71",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/batman-arkham-knight-71.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": ["convention"]
+  },
+  {
     "name": "Nazgul",
     "popCategory": "Pop! Movies",
     "category": "Lord of the rings",
@@ -372,7 +547,7 @@
     "description": "",
     "magictag": ["#sonic"],
     "owned": true
-  },  
+  },
   {
     "name": "Zouwu",
     "popCategory": "Pop!",
@@ -381,7 +556,7 @@
     "number": "28",
     "picture": ["https://stashpedia.com/img/funko/5/medium/zouwu-28-7340-1.jpg"],
     "description": "",
-    "magictag": ["#harrypotter","#hp","#fantasticbeasts"]
+    "magictag": ["#harrypotter", "#hp", "#fantasticbeasts"]
   },
   {
     "name": "Balrog",
@@ -698,6 +873,16 @@
     "owned": true
   },
   {
+    "name": "Jyn Erso",
+    "popCategory": "Pop!",
+    "category": "Star Wars",
+    "collection": "Rogue One",
+    "number": "138",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/jyn-erso-138.jpg"],
+    "description": "",
+    "owned": true
+  },
+  {
     "name": "Daenerys Targaryen",
     "popCategory": "Pop!",
     "category": "Game of Thrones",
@@ -706,6 +891,81 @@
     "picture": ["https://stashpedia.com/img/funko/2/medium/daenerys-targaryen-03-629-2.jpg"],
     "description": "",
     "owned": true
+  },
+  {
+    "name": "Captain America",
+    "popCategory": "Pop! Marvel",
+    "category": "Marvel Universe",
+    "collection": "Avengers",
+    "number": "10",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-10.jpg"],
+    "description": "",
+    "owned": true
+  },
+  {
+    "name": "Iron Man",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Avengers Infinity War",
+    "number": "285",
+    "picture": ["https://stashpedia.com/img/funko/4/medium/iron-man-285-6186-1.jpg"],
+    "description": "",
+    "owned": true
+  },
+  {
+    "name": "Iron Man",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Avengers Infinity War",
+    "number": "380",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/iron-man-light-up-380-7240-1.jpg"],
+    "description": "",
+    "wanted": true,
+    "rarity": ["Light Up"]
+  },
+  {
+    "name": "Jareth",
+    "popCategory": "Pop! Movies",
+    "category": "Labyrinth",
+    "collection": "Labyrinth",
+    "number": "365",
+    "picture": ["https://stashpedia.com/img/funko/3/medium/jareth-glitter-365-5677-1.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": ["glitter"]
+  },
+  {
+    "name": "Joy",
+    "popCategory": "Pop!",
+    "category": "Pixar",
+    "collection": "Inside Out",
+    "number": "132",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/joy-132.jpg"],
+    "description": "",
+    "owned": true,
+    "magictag": ["#pixar", "#disney"]
+  },
+  {
+    "name": "Blue Ranger",
+    "popCategory": "Pop! Television",
+    "category": "Mighty Morphin Power Rangers",
+    "collection": "Mighty Morphin Power Rangers",
+    "number": "410",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/blue-ranger-morphing-exclusive-410.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": ["glitter"]
+  },
+  {
+    "name": "Groot",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Marvel Stud10s",
+    "number": "378",
+    "picture": ["https://www.coleka.com/media/item/201808/31/pop-marvel-marvel-studio-10-years-groot-gold.jpg"],
+    "description": "",
+    "owned": true,
+    "rarity": ["metalic"]
   },
   {
     "name": "Loki",
@@ -759,5 +1019,17 @@
     "magictag": ["#sw"],
     "owned": true,
     "rarity": ["flocked"]
+  },
+  {
+    "name": "Dr. Manhattan",
+    "popCategory": "Pop! Movies",
+    "category": "DC Universe",
+    "collection": "Watchmen",
+    "number": "23",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/dr-manhattan-23.jpg"],
+    "description": "",
+    "magictag": ["#watchmen"],
+    "owned": true,
+    "rarity": []
   }
 ]

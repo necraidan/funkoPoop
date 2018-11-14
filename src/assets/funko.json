@@ -107,13 +107,14 @@
   {
     "name": "Niffler",
     "popCategory": "Pop!",
-    "category": "Marvel Universe",
-    "collection": "Marvel",
-    "number": "159",
+    "category": "Fantastic Beasts",
+    "collection": "Crimes of Grindelwald",
+    "number": "22",
     "picture": ["https://stashpedia.com/img/funko/5/medium/niffler-10-22-6940-1.jpg"],
     "description": "",
     "owned": true,
-    "rarity": ["supersized"]
+    "rarity": ["supersized"],
+    "magictag": ["#harrypotter","#hp","#fantasticbeasts"]
   },
   {
     "name": "Yami Yugi",
@@ -371,9 +372,19 @@
     "description": "",
     "magictag": ["#sonic"],
     "owned": true
+  },  
+  {
+    "name": "Zouwu",
+    "popCategory": "Pop!",
+    "category": "Fantastic Beasts",
+    "collection": "Crimes of Grindelwald",
+    "number": "28",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/zouwu-28-7340-1.jpg"],
+    "description": "",
+    "magictag": ["#harrypotter","#hp","#fantasticbeasts"]
   },
   {
-    "name": "Balrog 6\"",
+    "name": "Balrog",
     "popCategory": "Pop! Movies",
     "category": "Lord of the rings",
     "collection": "Lord of the rings",
@@ -381,7 +392,8 @@
     "picture": ["https://stashpedia.com/img/funko/2/medium/balrog-6-448-4294-1.jpg"],
     "description": "",
     "magictag": ["#lotr"],
-    "owned": true
+    "owned": true,
+    "rarity": ["supersized"]
   },
   {
     "name": "Rapunzel",

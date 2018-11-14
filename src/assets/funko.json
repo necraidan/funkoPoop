@@ -1,4 +1,16 @@
-[  
+[   
+   {
+    "name": "Elliot Masked",
+    "popCategory": "Pop! Television",
+    "category": "Mr Robot",
+    "collection": "Mr Robot",
+    "number": "482",
+    "picture": ["https://stashpedia.com/img/funko/2/medium/elliot-masked-482-4606-1.jpg"],
+    "description": "",
+    "magictag": ["#mrrobot"],
+    "rarity": ["2017 Summer Convention Exclusive"],
+    "owned": true
+  },
    {
     "name": "Loki",
     "popCategory": "Pop!",

@@ -132,7 +132,7 @@
     "number": "159",
     "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-light-blue-exclusive-159.jpg"],
     "description": "",
-    "magictag": ["#cap"],
+    "magictag": ["#cap", "#captain"],
     "wanted": true
   },
   {
@@ -148,16 +148,28 @@
     "wanted": true
   },
   {
-    "name": "Doctor Strange",
-    "popCategory": "Pop!",
-    "category": "Marvel Universe",
-    "collection": "Marvel Stud10s",
-    "number": "439",
-    "picture": ["https://stashpedia.com/img/funko/5/medium/doctor-strange-chrome-gold-439-7232-1.jpg"],
+    "name": "The Arrow",
+    "popCategory": "Pop! Television",
+    "category": "DC Universe",
+    "collection": "Arrow",
+    "number": "207",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/the-arrow-207.jpg"],
     "description": "",
-    "magictag": ["#strange"],
-    "rarity": ["metallic"],
-    "wanted": true
+    "magictag": ["#dragonball"],
+    "rarity": [],
+    "owned": true
+  },
+  {
+    "name": "Future Trunk",
+    "popCategory": "Pop! Animation",
+    "category": "Manga",
+    "collection": "Dragon Ball Super",
+    "number": "313",
+    "picture": ["https://stashpedia.com/img/funko/4/medium/trunks-future-313-5351-4.jpg"],
+    "description": "",
+    "magictag": ["#dragonball"],
+    "rarity": [],
+    "owned": true
   },
   {
     "name": "Niffler",
@@ -189,6 +201,17 @@
     "collection": "DC Super Heroes",
     "number": "143",
     "picture": ["https://stashpedia.com/img/funko/1/medium/batman-darkest-night-exclusive-143.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true
+  },
+  {
+    "name": "The Joker",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman Arkham Asylum",
+    "number": "53",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/the-joker-arkham-asylum-53.jpg"],
     "description": "",
     "magictag": ["#batman"],
     "owned": true
@@ -411,6 +434,66 @@
     "rarity": []
   },
   {
+    "name": "Zorn - Office Attire",
+    "popCategory": "Pop! Television",
+    "category": "Son of Zorn",
+    "collection": "Son of Zorn",
+    "number": "404",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/zorn-office-attire-exclusive-404.jpg"],
+    "description": "",
+    "magictag": [],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "The Riddler",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman Classic Tv Series",
+    "number": "183",
+    "picture": ["https://stashpedia.com/img/funko/2/medium/the-riddler-classic-1966-tv-183-4276-1.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Batman",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman Classic Tv Series",
+    "number": "41",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/batman-classic-1966-tv-41.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Spider-Man",
+    "popCategory": "Pop! Heroes",
+    "category": "Marvel Universe",
+    "collection": "Marvel",
+    "number": "03",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/spider-man-red-black-exclusive-03.jpg"],
+    "description": "",
+    "magictag": ["#spiderman"],
+    "owned": true,
+    "rarity": []
+  },
+  {
+    "name": "Surf's Up! Batman",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman Classic Tv Series",
+    "number": "133",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/batman-surfs-up-133.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "wanted": true,
+    "rarity": []
+  },
+  {
     "name": "Harley Quinn",
     "popCategory": "Pop! Heroes",
     "category": "DC Universe",
@@ -500,7 +583,7 @@
     "number": "06",
     "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-06.jpg"],
     "description": "",
-    "magictag": ["#cap"],
+    "magictag": ["#cap", "#captain"],
     "owned": true
   },
   {
@@ -523,7 +606,61 @@
     "picture": ["https://stashpedia.com/img/funko/3/medium/porg-198-5049-1.jpg"],
     "description": "",
     "magictag": ["#sw"],
-
+    "owned": true
+  },
+  {
+    "name": "First Order Stormtrooper",
+    "popCategory": "Pop!",
+    "category": "Star Wars",
+    "collection": "Star Wars",
+    "number": "66",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/first-order-stormtrooper-66.jpg"],
+    "description": "",
+    "magictag": ["#sw"],
+    "owned": true
+  },
+  {
+    "name": "Kylo Ren",
+    "popCategory": "Pop!",
+    "category": "Star Wars",
+    "collection": "Star Wars",
+    "number": "60",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/kylo-ren-60.jpg"],
+    "description": "",
+    "magictag": ["#sw"],
+    "owned": true
+  },
+  {
+    "name": "Unmasked Vader",
+    "popCategory": "Pop!",
+    "category": "Star Wars",
+    "collection": "Star Wars",
+    "number": "43",
+    "picture": ["https://stashpedia.com/img/funko/3/medium/darth-vader-unmasked-43-2292-2.jpg"],
+    "description": "",
+    "magictag": ["#sw"],
+    "owned": true
+  },
+  {
+    "name": "Holiday Dancing Groot",
+    "popCategory": "Pop! Marvel",
+    "category": "Marvel Universe",
+    "collection": "Guardians of the Galaxy",
+    "number": "101",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/dancing-groot-holiday-101.jpg"],
+    "description": "",
+    "magictag": ["#sw"],
+    "owned": true
+  },
+  {
+    "name": "Darth Vader",
+    "popCategory": "Pop!",
+    "category": "Star Wars",
+    "collection": "Star Wars",
+    "number": "01",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/darth-vader-01.jpg"],
+    "description": "",
+    "magictag": ["#sw"],
     "owned": true
   },
   {
@@ -535,6 +672,28 @@
     "picture": ["https://stashpedia.com/img/funko/1/medium/cheshire-cat-178.jpg"],
     "description": "",
     "magictag": ["#alice", "#cheshire"],
+    "owned": true
+  },
+  {
+    "name": "Dash",
+    "popCategory": "Pop!",
+    "category": "Pixar",
+    "collection": "Incredibles 2",
+    "number": "366",
+    "picture": ["https://stashpedia.com/img/funko/6/medium/dash-366-6302-5.jpg"],
+    "description": "",
+    "magictag": ["#incredibles"],
+    "owned": true
+  },
+  {
+    "name": "Dumbo with Timothy",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Disney",
+    "number": "281",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/dumbo-with-timothy-281-4537-8.jpg"],
+    "description": "",
+    "magictag": [],
     "owned": true
   },
   {
@@ -599,6 +758,28 @@
     "collection": "Marvel",
     "number": "319",
     "picture": ["https://stashpedia.com/img/funko/4/medium/deadpool-bob-ross-6164-2.jpg"],
+    "description": "",
+    "magictag": ["#deadpool"],
+    "owned": true
+  },
+  {
+    "name": "Terror",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Marvel",
+    "number": "143",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/terror-exclusive-143.jpg"],
+    "description": "",
+    "magictag": ["#deadpool"],
+    "owned": true
+  },
+  {
+    "name": "Deadpool",
+    "popCategory": "Pop! Marvel",
+    "category": "Marvel Universe",
+    "collection": "Marvel Universe",
+    "number": "20",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/deadpool-20-852-3.jpg"],
     "description": "",
     "magictag": ["#deadpool"],
     "owned": true
@@ -901,6 +1082,28 @@
     "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-10.jpg"],
     "description": "",
     "owned": true
+  },
+  {
+    "name": "U.S. Agent",
+    "popCategory": "Pop! Marvel",
+    "category": "Marvel Universe",
+    "collection": "Marvel",
+    "number": "108",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/us-agent-exclusive-108.jpg"],
+    "description": "",
+    "owned": true,
+    "magictag": ["#cap", "#captain"]
+  },
+  {
+    "name": "Lebron James",
+    "popCategory": "Pop! Sports",
+    "category": "Sport",
+    "collection": "NBA",
+    "number": "01",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/lebron-james-cavaliers-white-jersey-01-3256-2.jpg"],
+    "description": "",
+    "owned": true,
+    "magictag": ["#nba"]
   },
   {
     "name": "Iron Man",

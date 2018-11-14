@@ -1,4 +1,16 @@
-[   
+[      
+   {
+    "name": "Vashta Nerada",
+    "popCategory": "Pop! Television",
+    "category": "Doctor Who",
+    "collection": "Doctor Who",
+    "number": "709",
+    "picture": ["https://stashpedia.com/img/funko/7/medium/vashta-nerada-glow-7095-1.jpg"],
+    "description": "",
+    "magictag": ["#doctorwho"],
+    "rarity": ["glow"],
+    "owned": true
+  },
    {
     "name": "Elliot Masked",
     "popCategory": "Pop! Television",

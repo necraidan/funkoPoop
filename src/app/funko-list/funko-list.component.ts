@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort, MatTableDataSource, MatDialog } from '@angular/material';
 import { FunkoFilterService } from '../shared/service/funko-filter.service';
 import { Funko } from '../app.component';
+import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 
 @Component({
   // tslint:disable-next-line:component-selector

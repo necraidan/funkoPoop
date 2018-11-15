@@ -228,6 +228,61 @@
     "owned": true
   },
   {
+    "name": "Katana",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "DC Comics Bombshells",
+    "number": "169",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/katana-169.jpg"],
+    "description": "",
+    "magictag": [],
+    "owned": true
+  },
+  {
+    "name": "Batgirl",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "DC Comics Bombshells",
+    "number": "168",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/batgirl-168.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "owned": true
+  },
+  {
+    "name": "Nightshade Sally",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Disney",
+    "number": "154",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/sally-nightshade-154.jpg"],
+    "description": "",
+    "magictag": ["#burton"],
+    "owned": true
+  },
+  {
+    "name": "Alice",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Disney",
+    "number": "49",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/alice-49.jpg"],
+    "description": "",
+    "magictag": [],
+    "owned": true
+  },
+  {
+    "name": "McTwisp",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Alice Through the Looking Glass",
+    "number": "182",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/mctwisp-182.jpg"],
+    "description": "",
+    "magictag": [],
+    "owned": true
+  },
+  {
     "name": "Wonder Woman",
     "popCategory": "Pop! Heroes",
     "category": "DC Universe",
@@ -248,6 +303,17 @@
     "magictag": ["#tardis"],
     "owned": true,
     "rarity": ["supersized"]
+  },
+  {
+    "name": "K-9",
+    "popCategory": "Pop! Television",
+    "category": "Doctor Who",
+    "collection": "Doctor Who",
+    "number": "300",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/k-9-exclusive-300.jpg"],
+    "description": "",
+    "magictag": [],
+    "owned": true
   },
   {
     "name": "Doctor Strange",
@@ -673,6 +739,18 @@
     "description": "",
     "magictag": ["#alice", "#cheshire"],
     "owned": true
+  },
+  {
+    "name": "Cheshire Cat",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Alice in Wonderland",
+    "number": "178",
+    "picture": ["https://stashpedia.com/img/funko/4/medium/cheshire-cat-flocked-178-2482-3.jpg"],
+    "description": "",
+    "magictag": ["#alice", "#cheshire"],
+    "wanted": true,
+    "rarity": ["flocked"]
   },
   {
     "name": "Dash",
@@ -1108,24 +1186,14 @@
   {
     "name": "Cheshire Cat",
     "popCategory": "Pop!",
-    "category": "Alice aux pays des merveilles",
-    "collection": "Alice aux pays des merveilles",
-    "number": "293",
-    "picture": ["https://stashpedia.com/img/funko/1/medium/cheshire-cat-178.jpg"],
-    "description": "",
-    "owned": true,
-    "magictag": ["#alice"]
-  },
-  {
-    "name": "Cheshire Cat",
-    "popCategory": "Pop!",
     "category": "Disney",
     "collection": "Disney",
     "number": "35",
     "picture": ["https://stashpedia.com/img/funko/4/medium/cheshire-cat-faded-35-1032-4.jpg"],
     "description": "",
     "owned": true,
-    "magictag": ["#alice"]
+    "magictag": ["#alice"],
+    "rarity": ["faded"]
   },
   {
     "name": "Moriarty With Crown",

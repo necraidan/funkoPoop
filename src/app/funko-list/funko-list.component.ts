@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatSort, MatTableDataSource, MatDialog } from '@angular/material';
-import { FunkoFilterService } from '../shared/service/funko-filter.service';
+import { MatDialog, MatSort, MatTableDataSource } from '@angular/material';
 import { Funko } from '../app.component';
-import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
+import { FunkoDetailComponent } from '../funko-grid/funko-detail/funko-detail.component';
+import { FunkoFilterService } from '../shared/service/funko-filter.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -25,7 +25,7 @@ export class FunkoListComponent implements OnInit {
       this.dataSource.sort = this.sort;
     });
   }
-  
+
   openDetail(funko: Funko) {
     const dialogRef = this.dialog.open(FunkoDetailComponent, {
       width: '500px',

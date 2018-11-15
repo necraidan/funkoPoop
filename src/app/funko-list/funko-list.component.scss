@@ -5,5 +5,15 @@
 
   table {
     width: 100%;
+
+    .mat-row {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  :host {
+    width: 100%;
   }
 }

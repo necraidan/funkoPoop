@@ -4,7 +4,7 @@
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg?style=for-the-badge)](https://github.com/necraidan/funkoPoop)
 [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=FunkoPoop&style=for-the-badge)](http://necraidan/com/funkoPoop)
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?label=Follow&style=social)](https://twitter.com/necraidan)
+[![Twitter Follow](https://img.shields.io/twitter/follow/necraidan.svg?label=Follow&style=social)](https://twitter.com/necraidan)
 
 
 

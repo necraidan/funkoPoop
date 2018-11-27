@@ -548,6 +548,18 @@
     "rarity": []
   },
   {
+    "name": "Spider-Man",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Marvel",
+    "number": "397",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/spider-man-w-ugly-sweater-397-7457-1.jpg"],
+    "description": "",
+    "magictag": ["#spiderman"],
+    "wanted": true,
+    "rarity": []
+  },
+  {
     "name": "Surf's Up! Batman",
     "popCategory": "Pop! Heroes",
     "category": "DC Universe",

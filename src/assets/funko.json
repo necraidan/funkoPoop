@@ -12,6 +12,18 @@
     "owned": true
   },
   {
+    "name": "Pikachu",
+    "popCategory": "Pop! Games",
+    "category": "Pokemon",
+    "collection": "Pokemon",
+    "number": "353",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/pikachu-10-353-7433-1.jpg"],
+    "description": "",
+    "magictag": ["#pokemon"],
+    "rarity": ["oversized"],
+    "wanted": true
+  },
+  {
     "name": "Elliot Masked",
     "popCategory": "Pop! Television",
     "category": "Mr Robot",

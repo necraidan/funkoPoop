@@ -47,6 +47,18 @@
     "rarity": ["metallic"],
     "owned": true
   },
+    {
+    "name": "Captain Marvel",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Captain Marvel",
+    "number": "425",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/captain-marvel-425-7540-1.jpg"],
+    "description": "",
+    "magictag": [""],
+    "rarity": [""],
+    "wanted": true
+  },
   {
     "name": "Kanan",
     "popCategory": "Pop!",

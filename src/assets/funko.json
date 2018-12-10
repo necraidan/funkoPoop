@@ -171,6 +171,17 @@
     "wanted": true
   },
   {
+    "name": "Captain America with Photon Shield",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Marvel",
+    "number": "159",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/captain-america-photon-shield-exclusive-159.jpg"],
+    "description": "",
+    "magictag": ["#cap", "#captain"],
+    "wanted": true
+  },
+  {
     "name": "Doctor Strange",
     "popCategory": "Pop!",
     "category": "Marvel Universe",

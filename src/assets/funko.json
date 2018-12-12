@@ -1,5 +1,15 @@
 [
   {
+    "name": "Scarecrow",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "Batman The Animated Series",
+    "number": "195",
+    "picture": ["https://stashpedia.com/img/funko/2/medium/scarecrow-195-4542-1.jpg"],
+    "description": "",
+    "magictag": ["#batman"]
+  },
+  {
     "name": "Vashta Nerada",
     "popCategory": "Pop! Television",
     "category": "Doctor Who",

@@ -252,6 +252,17 @@
     "owned": true
   },
   {
+    "name": "Batman Who Laughs",
+    "popCategory": "Pop! Heroes",
+    "category": "DC Universe",
+    "collection": "DC Super Heroes",
+    "number": "256",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/batman-who-laughs-256-7286-1.jpg"],
+    "description": "",
+    "magictag": ["#batman"],
+    "wanted": true
+  },
+  {
     "name": "The Joker",
     "popCategory": "Pop! Heroes",
     "category": "DC Universe",

@@ -1,5 +1,15 @@
 [
    {
+    "name": "Iago",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Aladdin",
+    "number": "479",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/iago-479-7377-1.jpg"],
+    "description": "",
+    "magictag": []
+   },
+   {
     "name": "Genie with the lamp",
     "popCategory": "Pop!",
     "category": "Disney",

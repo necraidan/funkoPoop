@@ -1,5 +1,16 @@
 [
    {
+    "name": "Jasmine in Disguise",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Aladdin",
+    "number": "477",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/jasmine-in-disguise-chase-477-7375-1.jpg"],
+    "description": "",
+    "rarity": ['chase'],
+    "wanted": true
+   },
+   {
     "name": "Iago",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -7,7 +18,8 @@
     "number": "479",
     "picture": ["https://stashpedia.com/img/funko/5/medium/iago-479-7377-1.jpg"],
     "description": "",
-    "magictag": []
+    "magictag": [],
+    "wanted": true
    },
    {
     "name": "Elephant Abu",
@@ -17,7 +29,8 @@
     "number": "478",
     "picture": ["https://stashpedia.com/img/funko/5/medium/elephant-abu-478-7376-1.jpg"],
     "description": "",
-    "magictag": []
+    "magictag": [],
+    "wanted": true
    },
    {
     "name": "Genie with the lamp",
@@ -27,7 +40,8 @@
     "number": "476",
     "picture": ["https://stashpedia.com/img/funko/5/medium/genie-wlamp-476-7378-1.jpg"],
     "description": "",
-    "magictag": []
+    "magictag": [],
+    "wanted": true
   },
   {
     "name": "Prince Ali",
@@ -37,7 +51,8 @@
     "number": "475",
     "picture": ["https://stashpedia.com/img/funko/5/medium/prince-ali-475-7380-1.jpg"],
     "description": "",
-    "magictag": []
+    "magictag": [],
+    "wanted": true
   },
   {
     "name": "Scarecrow",

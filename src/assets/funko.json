@@ -1,5 +1,16 @@
 [
    {
+    "name": "Abu",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Disney",
+    "number": "353",
+    "picture": ["https://stashpedia.com/img/funko/3/medium/abu-flocked-353-5429-1.jpg"],
+    "description": "",
+    "rarity": ["flocked"],
+    "wanted": true
+   },
+   {
     "name": "Jasmine in Disguise",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -7,7 +18,7 @@
     "number": "477",
     "picture": ["https://stashpedia.com/img/funko/5/medium/jasmine-in-disguise-chase-477-7375-1.jpg"],
     "description": "",
-    "rarity": ['chase'],
+    "rarity": ["chase"],
     "wanted": true
    },
    {

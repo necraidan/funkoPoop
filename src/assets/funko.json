@@ -1,5 +1,16 @@
 [
-   {
+  {
+    "name": "Blue Ghost",
+    "popCategory": "Pop! Games",
+    "category": "Pac-Man",
+    "collection": "Pac-Man",
+    "number": "87",
+    "picture": ["https://stashpedia.com/img/funko/1/medium/blue-ghost-87.jpg"],
+    "description": "",
+    "rarity": [],
+    "wanted": true
+  },
+  {
     "name": "Abu",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -9,8 +20,8 @@
     "description": "",
     "rarity": ["flocked"],
     "wanted": true
-   },
-   {
+  },
+  {
     "name": "Jasmine in Disguise",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -20,8 +31,8 @@
     "description": "",
     "rarity": ["chase"],
     "wanted": true
-   },
-   {
+  },
+  {
     "name": "Iago",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -31,8 +42,8 @@
     "description": "",
     "magictag": [],
     "wanted": true
-   },
-   {
+  },
+  {
     "name": "Elephant Abu",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -42,8 +53,8 @@
     "description": "",
     "magictag": [],
     "wanted": true
-   },
-   {
+  },
+  {
     "name": "Genie with the lamp",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -123,7 +134,7 @@
     "rarity": ["metallic"],
     "owned": true
   },
-    {
+  {
     "name": "Captain Marvel",
     "popCategory": "Pop!",
     "category": "Marvel Universe",
@@ -146,7 +157,7 @@
     "owned": true,
     "rarity": []
   },
-    {
+  {
     "name": "Anakin Skywalker",
     "popCategory": "Pop!",
     "category": "Star Wars",

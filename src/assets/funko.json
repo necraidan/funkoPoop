@@ -11,6 +11,28 @@
     "wanted": true
   },
   {
+    "name": "Thor VS. Thanos",
+    "popCategory": "Pop!",
+    "category": "Marvel Universe",
+    "collection": "Avengers Infinity War",
+    "number": "707",
+    "picture": ["https://figurinepop.com/public/2018/11/thorthanos1box.jpg"],
+    "description": "",
+    "rarity": ["oversized"],
+    "owned": true
+  },
+  {
+    "name": "Aladdin's First Wish",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Disney",
+    "number": "409",
+    "picture": ["https://stashpedia.com/img/funko/6/medium/aladdins-first-wish-409-5996-11.jpg"],
+    "description": "",
+    "rarity": ["oversized"],
+    "owned": true
+  },
+  {
     "name": "Abu",
     "popCategory": "Pop!",
     "category": "Disney",
@@ -19,7 +41,7 @@
     "picture": ["https://stashpedia.com/img/funko/3/medium/abu-flocked-353-5429-1.jpg"],
     "description": "",
     "rarity": ["flocked"],
-    "wanted": true
+    "owned": true
   },
   {
     "name": "Jasmine in Disguise",
@@ -30,7 +52,7 @@
     "picture": ["https://stashpedia.com/img/funko/5/medium/jasmine-in-disguise-chase-477-7375-1.jpg"],
     "description": "",
     "rarity": ["chase"],
-    "wanted": true
+    "owned": true
   },
   {
     "name": "Iago",
@@ -41,7 +63,7 @@
     "picture": ["https://stashpedia.com/img/funko/5/medium/iago-479-7377-1.jpg"],
     "description": "",
     "magictag": [],
-    "wanted": true
+    "owned": true
   },
   {
     "name": "Elephant Abu",
@@ -52,7 +74,7 @@
     "picture": ["https://stashpedia.com/img/funko/5/medium/elephant-abu-478-7376-1.jpg"],
     "description": "",
     "magictag": [],
-    "wanted": true
+    "owned": true
   },
   {
     "name": "Genie with the lamp",
@@ -63,7 +85,7 @@
     "picture": ["https://stashpedia.com/img/funko/5/medium/genie-wlamp-476-7378-1.jpg"],
     "description": "",
     "magictag": [],
-    "wanted": true
+    "owned": true
   },
   {
     "name": "Prince Ali",

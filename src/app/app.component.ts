@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  updateFunkoFilter(event) {
+  updateFunkoFilter(event: any) {
     // FIXME: Why do we have sometimes the change event rather same data ?
     if (Array.isArray(event)) {
       this.funkoFilter = event;

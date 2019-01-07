@@ -113,13 +113,14 @@ export class HeaderComponent implements OnInit {
             ? true
             : f.collection === this.searchForm.get('collectionModel').value;
         })
-        .filter(funko => {
-          const val = this.searchForm.get('query').value;
+        .filter((funko: Funko) => {
+          const val = this.searchForm.get('query').value.toLowerCase();
           return (
-            funko.name.toLowerCase().includes(val.toLowerCase()) ||
-            funko.category.toLowerCase().includes(val.toLowerCase()) ||
-            funko.collection.toLowerCase().includes(val.toLowerCase()) ||
-            funko.number.toLowerCase().includes(val.toLowerCase())
+            funko.name.toLowerCase().includes(val) ||
+            funko.category.toLowerCase().includes(val) ||
+            funko.collection.toLowerCase().includes(val) ||
+            funko.number.toLowerCase().includes(val) ||
+            (funko.rarity && funko.rarity.length && funko.rarity.includes(val))
           );
         });
 

@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.http.get('assets/funko.json').subscribe((res: Funko[]) => {
-      console.log(res);
       // tslint:disable:curly
       const resTri = res.sort((a, b) => {
         if (a.category > b.category) return 1;
@@ -58,5 +57,5 @@ export interface Funko {
   magictag?: string[];
   owned?: boolean;
   wanted?: boolean;
-  rarety?: string[];
+  rarity?: string[];
 }

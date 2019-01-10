@@ -850,7 +850,7 @@
     "picture": ["https://stashpedia.com/img/funko/5/medium/thirteenth-doctor-686-7504-1.jpg"],
     "description": "",
     "magictag": ["#doctor"],
-    "wanted": true
+    "owned": true
   },
   {
     "name": "Porg",

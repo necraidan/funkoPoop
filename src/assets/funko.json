@@ -842,6 +842,17 @@
     "wanted": true
   },
   {
+    "name": "Thirteenth Doctor",
+    "popCategory": "Pop! Television",
+    "category": "Doctor Who",
+    "collection": "Doctor Who",
+    "number": "686",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/thirteenth-doctor-686-7504-1.jpg"],
+    "description": "",
+    "magictag": ["#doctor"],
+    "wanted": true
+  },
+  {
     "name": "Porg",
     "popCategory": "Pop!",
     "category": "Star Wars",

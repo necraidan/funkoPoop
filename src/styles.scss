@@ -6,7 +6,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Komika Axis', 'Roboto', sans-serif;
   background: url('https://source.unsplash.com/1920x1080/?comic');
   background-position: center center;
   background-size: cover;
@@ -15,7 +15,12 @@ body {
   // animation: mymove 4s linear infinite;
   // -webkit-animation: mymove 4s linear infinite;
   // -moz-animation: mymove 4s linear infinite;
+
+  ::ng-deep {
+    font-family: 'Komika Axis';
+  }
 }
+
 @keyframes mymove {
   0% {
     background-position: 0 0;
@@ -26,11 +31,10 @@ body {
 }
 
 @font-face {
-  font-family: 'Casino 3D Marquee';
-  src: url('/assets/font/Casino3DMarquee-Regular.eot');
-  src: url('/assets/font/Casino3DMarquee-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/assets/font/Casino3DMarquee-Regular.woff2') format('woff2'), url('/assets/font/Casino3DMarquee-Regular.woff') format('woff'),
-    url('/assets/font/Casino3DMarquee-Regular.ttf') format('truetype');
+  font-family: 'Komika Axis';
+  src: url('/assets/font/KomikaAxis.eot');
+  src: url('/assets/font/KomikaAxis.eot?#iefix') format('embedded-opentype'), url('/assets/font/KomikaAxis.woff2') format('woff2'),
+    url('/assets/font/KomikaAxis.woff') format('woff'), url('/assets/font/KomikaAxis.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

@@ -20,12 +20,16 @@
     .mat-card-header {
       justify-content: space-between;
 
-      .mat-card-title {
-        font-size: 1em;
-      }
+      &::ng-deep .mat-card-header-text {
+        margin: unset;
 
-      .mat-card-subtitle {
-        font-size: 0.75em;
+        .mat-card-title {
+          font-size: 1em;
+        }
+
+        .mat-card-subtitle {
+          font-size: 0.75em;
+        }
       }
     }
 

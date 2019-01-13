@@ -4,10 +4,12 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2em;
   justify-content: center;
+  font-family: 'Komika Axis';
 
   .funko-card {
     display: grid;
     align-content: space-between;
+    font-family: 'Komika Axis';
 
     img {
       cursor: pointer;
@@ -17,6 +19,14 @@
 
     .mat-card-header {
       justify-content: space-between;
+
+      .mat-card-title {
+        font-size: 1em;
+      }
+
+      .mat-card-subtitle {
+        font-size: 0.75em;
+      }
     }
 
     .mat-chip.mat-standard-chip {

@@ -1373,6 +1373,39 @@
     "magictag": ["#nba"]
   },
   {
+    "name": "Michael Jordan",
+    "popCategory": "Pop! Basketball",
+    "category": "Sport",
+    "collection": "NBA",
+    "number": "54",
+    "picture": ["https://stashpedia.com/img/funko/7/medium/michael-jordan-54-7692-1.jpg"],
+    "description": "",
+    "wanted": true,
+    "magictag": ["#nba"]
+  },
+  {
+    "name": "Michael Jordan",
+    "popCategory": "Pop! Basketball",
+    "category": "Sport",
+    "collection": "NBA",
+    "number": "55",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/michael-jordan-black-uniform-55-7694-1.jpg"],
+    "description": "",
+    "wanted": true,
+    "magictag": ["#nba"]
+  },
+  {
+    "name": "Michael Jordan",
+    "popCategory": "Pop! Basketball",
+    "category": "Sport",
+    "collection": "NBA",
+    "number": "56",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/michael-jordan-rookie-uniform-56-7693-1.jpg"],
+    "description": "",
+    "wanted": true,
+    "magictag": ["#nba"]
+  },
+  {
     "name": "Cheshire Cat",
     "popCategory": "Pop!",
     "category": "Disney",

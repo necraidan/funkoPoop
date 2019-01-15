@@ -22,6 +22,17 @@
     "owned": true
   },
   {
+    "name": "Ursula",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Disney",
+    "number": "231",
+    "picture": ["https://stashpedia.com/img/funko/3/medium/ursula-glitter-diamond-collection-231-5008-1.jpg"],
+    "description": "",
+    "rarity": ["glitter"],
+    "owned": true
+  },
+  {
     "name": "Aladdin's First Wish",
     "popCategory": "Pop!",
     "category": "Disney",

@@ -125,7 +125,7 @@ export class HeaderComponent implements OnInit {
         });
 
       this.change.emit(fList);
-      this.funkoFilterService.funkoFiler$.next(fList);
+      this.funkoFilterService.funkoFilter.next(fList);
     });
   }
 

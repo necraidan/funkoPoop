@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
       // tslint:enable:curly
       this.funkoList.next(resTri);
       this.funkoList.complete();
-      this.funkoFilterService.funkoFiler$.next(resTri);
+      this.funkoFilterService.funkoFilter.next(resTri);
       this.funkoFilter = Array.from(resTri);
     });
   }

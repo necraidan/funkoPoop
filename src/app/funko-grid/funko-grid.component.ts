@@ -16,7 +16,7 @@ export class FunkoGridComponent implements OnInit {
   constructor(private dialog: MatDialog, private funkoFilterService: FunkoFilterService) {}
 
   ngOnInit() {
-    this.funkoFilterService.funkoFiler$.subscribe(list => {
+    this.funkoFilterService.funkoFilter.subscribe(list => {
       this.funkoFilterList = list;
     });
   }

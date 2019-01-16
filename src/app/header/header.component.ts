@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
   isQuery: boolean;
 
   @Input()
-  funkoList$: AsyncSubject<Funko[]>;
+  funkoList: AsyncSubject<Funko[]>;
 
   @Output()
   change: EventEmitter<Funko[]> = new EventEmitter<Funko[]>();
@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
   constructor(private renderer: Renderer2, private activatedRoute: ActivatedRoute, private funkoFilterService: FunkoFilterService) {}
 
   ngOnInit() {
-    this.funkoList$.subscribe(fList => {
+    this.funkoList.subscribe(fList => {
       this.owned = fList.filter(elt => elt.owned).length;
       this.categories = Object.keys(
         fList.reduce((cats, f) => {
@@ -100,7 +100,7 @@ export class HeaderComponent implements OnInit {
   }
 
   private filtering() {
-    this.funkoList$.subscribe(list => {
+    this.funkoList.subscribe(list => {
       const fList = list
         .filter(f => {
           return this.searchForm.get('radioModel').value === 'all' ? true : f[this.searchForm.get('radioModel').value];

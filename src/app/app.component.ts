@@ -11,7 +11,7 @@ import { FunkoFilterService } from './shared/service/funko-filter.service';
 export class AppComponent implements OnInit {
   title = 'funkoPoop';
 
-  funkoList$: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
+  funkoList: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
   funkoFilter: Funko[];
 
   isGridView = true;
@@ -31,8 +31,8 @@ export class AppComponent implements OnInit {
         return 0;
       });
       // tslint:enable:curly
-      this.funkoList$.next(resTri);
-      this.funkoList$.complete();
+      this.funkoList.next(resTri);
+      this.funkoList.complete();
       this.funkoFilterService.funkoFiler$.next(resTri);
       this.funkoFilter = Array.from(resTri);
     });

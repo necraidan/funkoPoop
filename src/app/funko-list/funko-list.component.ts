@@ -20,7 +20,7 @@ export class FunkoListComponent implements OnInit {
   constructor(private dialog: MatDialog, private funkoFilterService: FunkoFilterService) {}
 
   ngOnInit() {
-    this.funkoFilterService.funkoFiler$.subscribe(list => {
+    this.funkoFilterService.funkoFilter.subscribe(list => {
       this.dataSource = new MatTableDataSource(list);
       this.dataSource.sort = this.sort;
     });

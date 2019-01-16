@@ -6,6 +6,6 @@ import { Funko } from './../../app.component';
   providedIn: 'root'
 })
 export class FunkoFilterService {
-  funkoFiler$: BehaviorSubject<Funko[]> = new BehaviorSubject<Funko[]>([]);
+  funkoFilter: BehaviorSubject<Funko[]> = new BehaviorSubject<Funko[]>([]);
   constructor() {}
 }

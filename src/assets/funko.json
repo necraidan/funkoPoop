@@ -22,6 +22,28 @@
     "owned": true
   },
   {
+    "name": "Mary Poppins With Bag",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Mary Poppins Returns",
+    "number": "467",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/mary-poppins-wbag-467-7687-1.jpg"],
+    "description": "",
+    "rarity": [],
+    "owned": true
+  },  
+   {
+    "name": "Mary Poppins At The Music Hall",
+    "popCategory": "Pop!",
+    "category": "Disney",
+    "collection": "Mary Poppins Returns",
+    "number": "473",
+    "picture": ["https://stashpedia.com/img/funko/5/medium/mary-poppins-pink-dress-473-7688-1.jpg"],
+    "description": "",
+    "rarity": [],
+    "owned": true
+  },  
+  {
     "name": "Ursula",
     "popCategory": "Pop!",
     "category": "Disney",

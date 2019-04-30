@@ -29,6 +29,8 @@ import { FunkoListComponent } from './funko-list/funko-list.component';
 import { FunkoRoutingModule } from './funko-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FilterFunkoPipe } from './shared/pipe/filter-funko-pipe.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, FunkoDetailComponent, FilterFunkoPipe, HeaderComponent, FunkoGridComponent, FunkoListComponent],
@@ -53,7 +55,8 @@ import { FilterFunkoPipe } from './shared/pipe/filter-funko-pipe.component';
     MatButtonToggleModule,
     MatChipsModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   entryComponents: [FunkoDetailComponent],
   providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],

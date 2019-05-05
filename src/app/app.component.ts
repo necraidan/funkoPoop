@@ -1,61 +1,13 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { AsyncSubject } from 'rxjs';
-import { FunkoFilterService } from './shared/service/funko-filter.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'funko-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'funkoPoop';
-
-  funkoList: AsyncSubject<Funko[]> = new AsyncSubject<Funko[]>();
-  funkoFilter: Funko[];
-
-  isGridView = true;
-
-  constructor(private http: HttpClient, private funkoFilterService: FunkoFilterService) {}
-
+  constructor() {}
   ngOnInit(): void {
-    this.http.get('assets/funko.json').subscribe((res: Funko[]) => {
-      // tslint:disable:curly
-      const resTri = res.sort((a, b) => {
-        if (a.category > b.category) return 1;
-        if (a.category < b.category) return -1;
-
-        if (a.name < b.name) return -1;
-        if (a.name > b.name) return 1;
-
-        return 0;
-      });
-      // tslint:enable:curly
-      this.funkoList.next(resTri);
-      this.funkoList.complete();
-      this.funkoFilterService.funkoFilter.next(resTri);
-      this.funkoFilter = Array.from(resTri);
-    });
+    throw new Error('Method not implemented.');
   }
-
-  updateFunkoFilter(event: any) {
-    // FIXME: Why do we have sometimes the change event rather same data ?
-    if (Array.isArray(event)) {
-      this.funkoFilter = event;
-    }
-  }
-}
-
-export interface Funko {
-  name: string;
-  popCategory?: string;
-  category: string;
-  collection: string;
-  number: string;
-  picture: string[];
-  description: string;
-  magictag?: string[];
-  owned?: boolean;
-  wanted?: boolean;
-  rarity?: string[];
 }

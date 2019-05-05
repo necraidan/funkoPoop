@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { Funko } from '../app.component';
+import { Funko } from '../shared/model/funko.model';
 import { FunkoFilterService } from './../shared/service/funko-filter.service';
 import { FunkoDetailComponent } from './funko-detail/funko-detail.component';
 

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog, MatSort, MatTableDataSource } from '@angular/material';
-import { Funko } from '../app.component';
 import { FunkoDetailComponent } from '../funko-grid/funko-detail/funko-detail.component';
+import { Funko } from '../shared/model/funko.model';
 import { FunkoFilterService } from '../shared/service/funko-filter.service';
 
 @Component({

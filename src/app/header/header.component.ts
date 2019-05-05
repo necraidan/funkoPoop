@@ -3,7 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { MatToolbar } from '@angular/material';
 import { ActivatedRoute, Params } from '@angular/router';
 import { AsyncSubject } from 'rxjs';
-import { Funko } from '../app.component';
+import { Funko } from '../shared/model/funko.model';
 import { FunkoFilterService } from './../shared/service/funko-filter.service';
 
 @Component({

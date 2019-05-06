@@ -11,3 +11,4 @@
 
 This project is about to manage my Funko Pop collection.
 
+Second project to manage the json => https://github.com/necraidan/funkoPoopManager

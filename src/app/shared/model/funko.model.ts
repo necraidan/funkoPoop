@@ -1,3 +1,6 @@
+import { Exclusivity } from './exclusivity.enum';
+import { Rarity } from './rarity.enum';
+
 export interface Funko {
   name: string;
   popCategory?: string;
@@ -9,5 +12,6 @@ export interface Funko {
   magictag?: string[];
   owned?: boolean;
   wanted?: boolean;
-  rarity?: string[];
+  rarity?: Rarity[];
+  exclusivity?: Exclusivity[];
 }

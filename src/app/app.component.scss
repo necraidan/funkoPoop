@@ -1,0 +1,30 @@
+:host {
+  .main {
+    display: grid;
+    grid-gap: 3vw;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  :host {
+    .main {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 920px) {
+  :host {
+    .main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1200px) {
+  :host {
+    .main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

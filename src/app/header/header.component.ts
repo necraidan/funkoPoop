@@ -109,9 +109,7 @@ export class HeaderComponent implements OnInit {
           return this.searchForm.get('categorieModel').value === 'All' ? true : f.category === this.searchForm.get('categorieModel').value;
         })
         .filter(f => {
-          return this.searchForm.get('collectionModel').value === 'All'
-            ? true
-            : f.collection === this.searchForm.get('collectionModel').value;
+          return this.searchForm.get('collectionModel').value === 'All' ? true : f.collection === this.searchForm.get('collectionModel').value;
         })
         .filter((funko: Funko) => {
           const val = this.searchForm.get('query').value.toLowerCase();
@@ -120,7 +118,7 @@ export class HeaderComponent implements OnInit {
             funko.category.toLowerCase().includes(val) ||
             funko.collection.toLowerCase().includes(val) ||
             funko.number.toLowerCase().includes(val) ||
-            (funko.rarity && funko.rarity.length && funko.rarity.includes(val))
+            (funko.rarities && funko.rarities.length && funko.rarities.includes(val))
           );
         });
 
@@ -130,8 +128,6 @@ export class HeaderComponent implements OnInit {
   }
 
   private pushState(arg) {
-    return arg.query
-      ? window.history.pushState(undefined, 'query', 'search?query=' + arg.query)
-      : window.history.pushState(undefined, 'query', '');
+    return arg.query ? window.history.pushState(undefined, 'query', 'search?query=' + arg.query) : window.history.pushState(undefined, 'query', '');
   }
 }

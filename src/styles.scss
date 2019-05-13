@@ -8,7 +8,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: 'Komika Axis', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   /* background: url('https://source.unsplash.com/1920x1080/?comic'); */
   background: url('https://images.unsplash.com/photo-1501432377862-3d0432b87a14?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9');
@@ -17,7 +17,7 @@ body {
   background-attachment: fixed;
 
   ::ng-deep {
-    font-family: 'Komika Axis';
+    // font-family: 'Komika Axis';
   }
 }
 
@@ -30,11 +30,11 @@ body {
   }
 }
 
-@font-face {
-  font-family: 'Komika Axis';
-  src: url('/assets/font/KomikaAxis.eot');
-  src: url('/assets/font/KomikaAxis.eot?#iefix') format('embedded-opentype'), url('/assets/font/KomikaAxis.woff2') format('woff2'),
-    url('/assets/font/KomikaAxis.woff') format('woff'), url('/assets/font/KomikaAxis.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Komika Axis';
+//   src: url('/assets/font/KomikaAxis.eot');
+//   src: url('/assets/font/KomikaAxis.eot?#iefix') format('embedded-opentype'), url('/assets/font/KomikaAxis.woff2') format('woff2'),
+//     url('/assets/font/KomikaAxis.woff') format('woff'), url('/assets/font/KomikaAxis.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }

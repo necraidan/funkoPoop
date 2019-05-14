@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --build-optimizer --base-href /funkoPoop/",
+    "fake": "rm -rf funkoPoop/ && mv dist/ funkoPoop/",
+    "pump-fake": "npm run build && npm run fake && http-server",
     "after-deploy": "sh scripts/afterDeploy.sh",
     "prettify": "prettier --write src/**/**/*.ts",
     "test": "ng test",

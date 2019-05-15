@@ -16,4 +16,5 @@ export interface Funko {
   wantedBe?: boolean;
   rarities?: Rarity[];
   exclusivities?: Exclusivity[];
+  barcode?: string;
 }

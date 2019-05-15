@@ -1,9 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Funko } from '../model/funko.model';
-import { HttpClient } from '@angular/common/http';
-import { Rarity } from '../model/rarity.enum';
 import { Exclusivity } from '../model/exclusivity.enum';
+import { Funko } from '../model/funko.model';
+import { Rarity } from '../model/rarity.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +29,6 @@ export class FunkoStoreService {
   filterFunkoList(filter: string) {
     this.funkoSub.next(
       this.funkoJson.filter((funko: Funko) => {
-        filter
         return (
           funko.name.toLowerCase().includes(filter) ||
           funko.category.toLowerCase().includes(filter) ||
@@ -37,7 +36,8 @@ export class FunkoStoreService {
           funko.number.toLowerCase().includes(filter) ||
           (funko.tags && funko.tags.length && funko.tags.includes(filter)) ||
           (funko.rarities && funko.rarities.length && funko.rarities.includes(filter as Rarity)) ||
-          (funko.exclusivities && funko.exclusivities.length && funko.exclusivities.includes(filter as Exclusivity))
+          (funko.exclusivities && funko.exclusivities.length && funko.exclusivities.includes(filter as Exclusivity)) ||
+          (funko.barcode && funko.barcode.includes(filter))
         );
       })
     );

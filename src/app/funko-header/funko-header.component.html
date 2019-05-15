@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <span>Funko Poop !</span>
+  <span (click)="openCamera()">Funko Poop !</span>
   <form class="search-form" [formGroup]="searchForm">
     <mat-form-field class="input-full-width" floatLabel="never">
       <input matInput placeholder="Search" formControlName="query" />

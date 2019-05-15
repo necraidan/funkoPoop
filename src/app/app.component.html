@@ -1,8 +1,10 @@
 <!-- <header [funkoList]="funkoList" (gridView)="isGridView = $event"></header>
 <funko-grid *ngIf="isGridView"></funko-grid> -->
 <!-- <funko-list *ngIf="!isGridView"></funko-list> -->
-<funko-header></funko-header>
+<funko-header (barcodeAsked)="barcodeHandler($event)"></funko-header>
 <!-- <router-outlet></router-outlet> -->
-<div class="main">
+<div *ngIf="isMain" class="main">
   <funko-card *ngFor="let funko of funkoList" [funko]="funko"></funko-card>
 </div>
+<div *ngIf="!isMain" class="barcode-scanner"></div>
+<div [innerHTML]="res | json"></div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { Funko } from '../shared/model/funko.model';
+import { FunkoStoreService } from '../shared/service/funko-store.service';
 
 @Component({
   selector: 'funko-header',
@@ -6,7 +9,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./funko-header.component.scss']
 })
 export class FunkoHeaderComponent implements OnInit {
-  constructor() {}
+  searchForm = new FormGroup({
+    query: new FormControl(''),
+    radioModel: new FormControl('all'),
+    categorieModel: new FormControl('All'),
+    collectionModel: new FormControl('All')
+  });
 
-  ngOnInit() {}
+  isQuery: boolean;
+
+  constructor(private funkoStore: FunkoStoreService) {}
+
+  ngOnInit() {
+    this.searchForm.valueChanges.subscribe(values => {
+      this.isQuery = !!values.query;
+      // this.pushState(values);
+
+      setTimeout(() => {
+        this.funkoStore.filterFunkoList(this.searchForm.get('query').value.toLowerCase());
+      }, 0);
+    });
+  }
+
+  clearInput() {
+    this.searchForm.patchValue({ query: '' });
+  }
 }

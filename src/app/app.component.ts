@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Funko } from './shared/model/funko.model';
+import { FunkoStoreService } from './shared/service/funko-store.service';
 
 @Component({
   selector: 'funko-root',
@@ -8,15 +9,15 @@ import { Funko } from './shared/model/funko.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  funkoList: Funko[];
-  funkoStore: Funko[];
+  funkoList: Funko[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private funkoStore: FunkoStoreService) {}
 
   ngOnInit(): void {
-    this.http.get('assets/funko.json').subscribe((res: Funko[]) => {
-      this.funkoStore = res;
-      this.funkoList = [...this.funkoStore];
+    this.funkoStore.initFunkoStore();
+
+    this.funkoStore.funkoList.subscribe(fl => {
+      this.funkoList = fl;
     });
   }
 }

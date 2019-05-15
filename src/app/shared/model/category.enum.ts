@@ -1,4 +1,5 @@
 export enum Category {
+  ASTERIX_ET_OBELIX = 'Asterix & Obelix',
   CARE_BEARS = 'Care Bears',
   DC_UNIVERSE = 'DC Universe',
   DISNEY = 'Disney',

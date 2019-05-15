@@ -3,6 +3,7 @@ export enum Collection {
   ALICE_THROUGH_THE_LOOKING_GLASS = 'Alice Through the Looking Glass',
   ALICE_IN_WONDERLAND = 'Alice in Wonderland',
   ARROW = 'Arrow',
+  ASTERIX_ET_OBELIX = 'Asterix & Obelix',
   AUSTIN_POWERS = 'Austin Powers',
   AVENGERS = 'Avengers',
   AVENGERS_ENDGAME = 'Avengers Endgame',

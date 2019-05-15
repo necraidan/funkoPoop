@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { SwUpdate } from '@angular/service-worker';
 import { Funko } from './shared/model/funko.model';
 import { FunkoStoreService } from './shared/service/funko-store.service';
 
@@ -11,7 +11,7 @@ import { FunkoStoreService } from './shared/service/funko-store.service';
 export class AppComponent implements OnInit {
   funkoList: Funko[] = [];
 
-  constructor(private funkoStore: FunkoStoreService) {}
+  constructor(private funkoStore: FunkoStoreService, private swUpdate: SwUpdate) {}
 
   ngOnInit(): void {
     this.funkoStore.initFunkoStore();
@@ -19,5 +19,13 @@ export class AppComponent implements OnInit {
     this.funkoStore.funkoList.subscribe(fl => {
       this.funkoList = fl;
     });
+
+    if (this.swUpdate.isEnabled) {
+      this.swUpdate.available.subscribe(() => {
+        if (confirm('New version available. Load New Version?')) {
+          window.location.reload();
+        }
+      });
+    }
   }
 }

@@ -47,7 +47,11 @@ export class AppComponent implements OnInit {
     } else {
     }
   }
-
+  /**
+   * Test code for analysis
+   *
+   * @memberof AppComponent
+   */
   initBarcodeScanner() {
     Quagga.init(
       {
@@ -67,7 +71,6 @@ export class AppComponent implements OnInit {
         },
         numOfWorkers: navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4,
         decoder: {
-          // readers: [{ format: 'ean_reader', config: {} }]
           readers: ['upc_reader']
         },
         locate: true
@@ -83,7 +86,7 @@ export class AppComponent implements OnInit {
     );
 
     Quagga.onProcessed(function(result) {
-      var drawingCtx = Quagga.canvas.ctx.overlay,
+      const drawingCtx = Quagga.canvas.ctx.overlay,
         drawingCanvas = Quagga.canvas.dom.overlay;
 
       if (result) {

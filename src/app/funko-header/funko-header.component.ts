@@ -26,17 +26,28 @@ export class FunkoHeaderComponent implements OnInit {
 
   ngOnInit() {
     this.searchForm.valueChanges.subscribe(values => {
+      const query = this.searchForm.get('query').value.toLowerCase();
       this.isQuery = !!values.query;
+
       // this.pushState(values);
 
       setTimeout(() => {
-        this.funkoStore.filterFunkoList(this.searchForm.get('query').value.toLowerCase());
+        this.funkoStore.filterFunkoList(query);
+        this.funkoStore.setQuery(query);
       }, 0);
+    });
+
+    this.funkoStore.query.subscribe(query => {
+      if (query !== this.searchForm.get('query').value) {
+        this.searchForm.patchValue({ query });
+      }
     });
   }
 
   clearInput() {
     this.searchForm.patchValue({ query: '' });
+
+    this.funkoStore.setQuery('');
   }
 
   openCamera() {

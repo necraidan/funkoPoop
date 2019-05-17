@@ -13,8 +13,6 @@ export class AppComponent implements OnInit {
   isMain = true;
   funkoList: Funko[] = [];
 
-  res: any = 'pouet';
-
   constructor(private funkoStore: FunkoStoreService, private swUpdate: SwUpdate) {}
 
   ngOnInit(): void {
@@ -25,10 +23,8 @@ export class AppComponent implements OnInit {
     });
 
     if (this.swUpdate.isEnabled) {
-      console.log('register');
       console.log(this.swUpdate);
       this.swUpdate.available.subscribe(() => {
-        console.log('update available !!!');
         if (confirm('New version available. Load New Version?')) {
           window.location.reload();
         }
@@ -37,8 +33,6 @@ export class AppComponent implements OnInit {
   }
 
   barcodeHandler(event: any) {
-    console.log('barcode asked');
-    console.log(event);
     this.isMain = !event;
     if (event) {
       setTimeout(() => {
@@ -112,11 +106,10 @@ export class AppComponent implements OnInit {
     });
 
     Quagga.onDetected(obj => {
-      console.log(obj);
-      this.res = obj.codeResult.code;
+      const code: string = obj.codeResult.code;
       Quagga.stop();
       this.isMain = true;
-      this.funkoStore.filterFunkoList(this.res);
+      this.funkoStore.setQuery(code.toLowerCase());
     });
   }
 }

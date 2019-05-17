@@ -10,8 +10,11 @@ import { Rarity } from '../model/rarity.enum';
 })
 export class FunkoStoreService {
   private funkoSub: BehaviorSubject<Funko[]> = new BehaviorSubject<Funko[]>([]);
+  private querySub: BehaviorSubject<string> = new BehaviorSubject<string>('');
+
   private funkoJson: Funko[];
-  funkoList = this.funkoSub.asObservable();
+  readonly funkoList = this.funkoSub.asObservable();
+  readonly query = this.querySub.asObservable();
 
   constructor(private http: HttpClient) {}
 
@@ -41,5 +44,9 @@ export class FunkoStoreService {
         );
       })
     );
+  }
+
+  setQuery(query: string) {
+    this.querySub.next(query);
   }
 }

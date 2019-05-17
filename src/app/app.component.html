@@ -6,5 +6,4 @@
 <div *ngIf="isMain" class="main">
   <funko-card *ngFor="let funko of funkoList" [funko]="funko"></funko-card>
 </div>
-<div *ngIf="!isMain" class="barcode-scanner"></div>
-<div [innerHTML]="res | json"></div>
+<funko-code-reader *ngIf="!isMain"></funko-code-reader>

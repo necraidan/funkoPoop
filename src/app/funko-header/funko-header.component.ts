@@ -42,6 +42,12 @@ export class FunkoHeaderComponent implements OnInit {
         this.searchForm.patchValue({ query });
       }
     });
+
+    this.funkoStore.funkoList.subscribe(() => {
+      if (this.barcodeOpen) {
+        this.openCloseCamera();
+      }
+    });
   }
 
   clearInput() {
@@ -50,8 +56,7 @@ export class FunkoHeaderComponent implements OnInit {
     this.funkoStore.setQuery('');
   }
 
-  openCamera() {
-    console.log('call');
+  openCloseCamera() {
     this.barcodeOpen = !this.barcodeOpen;
     this.barcodeAsked.emit(this.barcodeOpen);
   }

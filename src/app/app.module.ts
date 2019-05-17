@@ -11,9 +11,10 @@ import { FunkoHeaderComponent } from './funko-header/funko-header.component';
 import { FunkoRoutingModule } from './funko-routing.module';
 import { MainModule } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
+import { FunkoCodeReaderComponent } from './funko-code-reader/funko-code-reader.component';
 
 @NgModule({
-  declarations: [AppComponent, FunkoHeaderComponent],
+  declarations: [AppComponent, FunkoHeaderComponent, FunkoCodeReaderComponent],
   imports: [
     FunkoRoutingModule,
     BrowserModule,

@@ -1,7 +1,43 @@
 :host {
   width: 100%;
 
-  mat-card {
+  .mat-card {
     display: grid;
+    align-content: space-between;
+    font-family: 'Komika Axis';
+
+    border: solid black;
+    border-width: 3px 4px 3px 5px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+
+    img {
+      cursor: pointer;
+      height: 35vh;
+      object-fit: cover;
+    }
+
+    .mat-card-header {
+      justify-content: space-between;
+
+      &::ng-deep .mat-card-header-text {
+        margin: unset;
+
+        .mat-card-title {
+          font-size: 1em;
+        }
+
+        .mat-card-subtitle {
+          font-size: 0.75em;
+        }
+      }
+    }
+
+    &.owned {
+      background-color: #d7d7d7;
+    }
+
+    &.wanted {
+      background-color: #ff9191;
+    }
   }
 }

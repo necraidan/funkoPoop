@@ -1,0 +1,20 @@
+:host {
+  position: relative;
+  div {
+    margin: 0 auto;
+    height: 480px;
+    width: 640px;
+
+    > canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+::ng-deep .drawingBuffer {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

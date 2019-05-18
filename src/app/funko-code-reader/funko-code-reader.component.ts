@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FunkoStoreService } from '../shared/service/funko-store.service';
 
 declare var Quagga: any;
@@ -29,7 +29,7 @@ export class FunkoCodeReaderComponent implements OnInit, OnDestroy {
       {
         inputStream: {
           type: 'LiveStream',
-          target: document.querySelector('funko-code-reader'),
+          target: document.querySelector('funko-code-reader > div'),
           constraints: {
             width: { min: 640 },
             height: { min: 480 },

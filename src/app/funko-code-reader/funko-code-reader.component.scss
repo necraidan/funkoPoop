@@ -1,12 +1,14 @@
 :host {
   position: relative;
   div {
+    position: relative;
     margin: 0 auto;
     height: 480px;
     width: 640px;
 
     > canvas {
       position: absolute;
+      margin: 0 auto;
       left: 0;
       top: 0;
     }

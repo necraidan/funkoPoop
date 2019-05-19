@@ -1,14 +1,48 @@
 :host {
-  mat-toolbar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Komika Axis';
 
-    form {
-      flex-basis: 100%;
+  @function stroke($stroke, $color) {
+    $shadow: ();
+    $from: $stroke * -1;
+    @for $i from $from through $stroke {
+      @for $j from $from through $stroke {
+        $shadow: append($shadow, $i * 1px $j * 1px 0 $color, comma);
+      }
+    }
+    @return $shadow;
+  }
 
-      mat-form-field {
-        display: block;
-        margin: 0 20px;
+  @mixin stroke($stroke, $color) {
+    text-shadow: stroke($stroke, $color);
+  }
+
+  .title {
+    color: white;
+    @include stroke(5, black);
+    text-align: center;
+    font-size: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+      @include stroke(5, white);
+    }
+  }
+
+  form {
+    flex-basis: 100%;
+    color: white;
+
+    mat-form-field {
+      display: block;
+      margin: 0 20px;
+
+      ::ng-deep input {
+        font-family: 'Komika Axis';
+        color: white;
+        @include stroke(3, black);
       }
     }
   }

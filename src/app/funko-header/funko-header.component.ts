@@ -33,7 +33,7 @@ export class FunkoHeaderComponent implements OnInit {
 
       setTimeout(() => {
         this.funkoStore.filterFunkoList(query);
-        this.funkoStore.setQuery(query);
+        //this.funkoStore.setQuery(query);
       }, 0);
     });
 
@@ -53,7 +53,7 @@ export class FunkoHeaderComponent implements OnInit {
   clearInput() {
     this.searchForm.patchValue({ query: '' });
 
-    this.funkoStore.setQuery('');
+    //this.funkoStore.setQuery('');
   }
 
   openCloseCamera() {

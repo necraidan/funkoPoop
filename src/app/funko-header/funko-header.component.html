@@ -1,11 +1,9 @@
-<mat-toolbar color="primary">
-  <span (click)="openCloseCamera()">Funko Poop !</span>
-  <form class="search-form" [formGroup]="searchForm">
-    <mat-form-field class="input-full-width" floatLabel="never">
-      <input matInput placeholder="Search" formControlName="query" />
-      <button mat-button *ngIf="isQuery" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
-        X
-      </button>
-    </mat-form-field>
-  </form>
-</mat-toolbar>
+<div class="title" (click)="openCloseCamera()">Funko Poop !</div>
+<form class="search-form" [formGroup]="searchForm">
+  <mat-form-field class="input-full-width" floatLabel="never">
+    <input matInput placeholder="Search" formControlName="query" />
+    <button mat-button *ngIf="isQuery" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
+      X
+    </button>
+  </mat-form-field>
+</form>

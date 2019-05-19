@@ -47,6 +47,8 @@ export class FunkoStoreService {
   }
 
   setQuery(query: string) {
+    console.log('set query');
+    console.log(query);
     this.querySub.next(query);
   }
 }

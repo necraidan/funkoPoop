@@ -8,7 +8,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/necraidan.svg?label=Follow&style=social)](https://twitter.com/necraidan)
 
 
-
 This project is about to manage my Funko Pop collection.
+PWA ready !
 
 Second project to manage the json => https://github.com/necraidan/funkoPoopManager

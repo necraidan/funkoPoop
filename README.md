@@ -14,4 +14,4 @@ PWA ready !
 Second project to manage the json => https://github.com/necraidan/funkoPoopManager
 
 
-Each commit on dev lauch the build on travis-ci to deploy on master: https://necraidan.com/funkoPoop
+Each commit on dev launch the build on travis-ci and deploy on master: https://necraidan.com/funkoPoop

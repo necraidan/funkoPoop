@@ -1,9 +1,9 @@
 <div class="title" (click)="openCloseCamera()">Funko Poop !</div>
 <form class="search-form" [formGroup]="searchForm">
-  <mat-form-field class="input-full-width" floatLabel="never">
-    <input matInput placeholder="Search" formControlName="query" />
+  <div class="input-full-width">
+    <input placeholder="Search" formControlName="query" />
     <button mat-button *ngIf="isQuery" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
       X
     </button>
-  </mat-form-field>
+  </div>
 </form>

@@ -12,3 +12,6 @@ This project is about to manage my Funko Pop collection.
 PWA ready !
 
 Second project to manage the json => https://github.com/necraidan/funkoPoopManager
+
+
+Each commit on dev lauch the build on travis-ci to deploy on master: https://necraidan.com/funkoPoop

@@ -17,6 +17,7 @@ export enum Category {
   MIGHTY_MORPHIN_POWER_RANGERS = 'Mighty Morphin Power Rangers',
   MOVIE = 'Movie',
   MR_ROBOT = 'Mr Robot',
+  NBA = 'NBA',
   NHL = 'NHL',
   NAPOLEON_DYNAMITE = 'Napoleon Dynamite',
   PAC_MAN = 'Pac-Man',

@@ -16,6 +16,7 @@ export enum Collection {
   CANADIENS_DE_MONTRÉAL = 'Canadiens de Montréal',
   CAPTAIN_MARVEL = 'Captain Marvel',
   CARE_BEARS = 'Care Bears',
+  CHICAGO_BULLS = 'Chicago Bulls',
   CRASH_BANDICOOT = 'Crash Bandicoot',
   CRIMES_OF_GRINDELWALD = 'Crimes of Grindelwald',
   DC_COMICS = 'DC Comics',

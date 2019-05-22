@@ -10,6 +10,18 @@
     border-width: 3px 4px 3px 5px;
     border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
 
+    &.be {
+      background-color: #ff0800;
+    }
+
+    &.no {
+      background-color: #1e5ed4;
+    }
+
+    &.nobe {
+      background-color: #6f0061;
+    }
+
     img {
       cursor: pointer;
       height: 35vh;

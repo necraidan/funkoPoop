@@ -1,4 +1,5 @@
-<mat-card class="example-card">
+<mat-card [ngClass]="{ be: funko.wantedBe && !funko.wantedNo, no: !funko.wantedBe && funko.wantedNo, beno: funko.wantedBe && funko.wantedNo }">
+  <!--  Add pipe for classes-->
   <mat-card-header>
     <div mat-card-avatar>{{ funko.number }}</div>
   </mat-card-header>

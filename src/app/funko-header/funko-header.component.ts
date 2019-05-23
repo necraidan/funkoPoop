@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { FunkoStoreService } from '../shared/service/funko-store.service';
 
@@ -10,6 +10,8 @@ import { FunkoStoreService } from '../shared/service/funko-store.service';
 export class FunkoHeaderComponent implements OnInit {
   @Output()
   barcodeAsked = new EventEmitter<any>();
+  @ViewChild('')
+  inputQuery: ElementRef;
 
   barcodeOpen = false;
 
@@ -50,9 +52,16 @@ export class FunkoHeaderComponent implements OnInit {
     });
   }
 
-  clearInput() {
-    this.searchForm.patchValue({ query: '' });
+  handleEnter(event: KeyboardEvent) {
+    (this.inputQuery.nativeElement as HTMLInputElement).blur();
+    event.stopPropagation();
+  }
 
+  clearInput(event: MouseEvent) {
+    if (event.pageX !== 0 || event.pageY !== 0) {
+      this.searchForm.patchValue({ query: '' });
+    }
+    //this.searchForm.patchValue({ query: '' });
     //this.funkoStore.setQuery('');
   }
 

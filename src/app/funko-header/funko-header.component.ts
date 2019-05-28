@@ -10,7 +10,8 @@ import { FunkoStoreService } from '../shared/service/funko-store.service';
 export class FunkoHeaderComponent implements OnInit {
   @Output()
   barcodeAsked = new EventEmitter<any>();
-  @ViewChild('')
+
+  @ViewChild('inputQuery', { read: ElementRef, static: true })
   inputQuery: ElementRef;
 
   barcodeOpen = false;

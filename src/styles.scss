@@ -22,9 +22,9 @@ body {
 
 @font-face {
   font-family: 'Komika Axis';
-  src: url('assets/font/KomikaAxis.eot');
-  src: url('assets/font/KomikaAxis.eot?#iefix') format('embedded-opentype'), url('assets/font/KomikaAxis.woff2') format('woff2'),
-    url('assets/font/KomikaAxis.woff') format('woff'), url('assets/font/KomikaAxis.ttf') format('truetype');
+  src: url('/assets/font/KomikaAxis.eot');
+  src: url('/assets/font/KomikaAxis.eot?#iefix') format('embedded-opentype'), url('/assets/font/KomikaAxis.woff2') format('woff2'),
+    url('/assets/font/KomikaAxis.woff') format('woff'), url('/assets/font/KomikaAxis.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

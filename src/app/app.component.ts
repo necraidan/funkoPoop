@@ -33,4 +33,8 @@ export class AppComponent implements OnInit {
   barcodeHandler(event: any) {
     this.isMain = !event;
   }
+
+  trackElement(index: number, funko: Funko) {
+    return funko.guid;
+  }
 }

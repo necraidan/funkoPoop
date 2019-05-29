@@ -4,6 +4,6 @@
 <funko-header (barcodeAsked)="barcodeHandler($event)"></funko-header>
 <!-- <router-outlet></router-outlet> -->
 <div *ngIf="isMain" class="main">
-  <funko-card *ngFor="let funko of funkoList" [funko]="funko"></funko-card>
+  <funko-card *ngFor="let funko of funkoList; trackBy: trackElement" [funko]="funko"></funko-card>
 </div>
 <funko-code-reader *ngIf="!isMain"></funko-code-reader>

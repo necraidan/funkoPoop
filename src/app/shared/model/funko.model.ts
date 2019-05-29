@@ -2,6 +2,7 @@ import { Exclusivity } from './exclusivity.enum';
 import { Rarity } from './rarity.enum';
 
 export interface Funko {
+  guid: string;
   name: string;
   popCategory?: string;
   category: string;

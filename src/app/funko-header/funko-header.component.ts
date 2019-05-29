@@ -32,11 +32,8 @@ export class FunkoHeaderComponent implements OnInit {
       const query = this.searchForm.get('query').value.toLowerCase();
       this.isQuery = !!values.query;
 
-      // this.pushState(values);
-
       setTimeout(() => {
         this.funkoStore.filterFunkoList(query);
-        //this.funkoStore.setQuery(query);
       }, 0);
     });
 
@@ -62,8 +59,6 @@ export class FunkoHeaderComponent implements OnInit {
     if (event.pageX !== 0 || event.pageY !== 0) {
       this.searchForm.patchValue({ query: '' });
     }
-    //this.searchForm.patchValue({ query: '' });
-    //this.funkoStore.setQuery('');
   }
 
   openCloseCamera() {

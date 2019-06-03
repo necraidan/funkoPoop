@@ -3,6 +3,7 @@
   flex-direction: column;
   font-family: 'Komika Axis';
   padding-bottom: 10px;
+  position: relative;
 
   @function stroke($stroke, $color) {
     $shadow: ();
@@ -32,6 +33,12 @@
     }
   }
 
+  .menu {
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+  }
+
   form {
     flex-basis: 100%;
     color: white;
@@ -55,6 +62,19 @@
         top: -1px;
         color: black;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  :host {
+    .title {
+      font-size: 2rem;
+    }
+
+    .menu {
+      top: 0.5em;
+      right: 0em;
     }
   }
 }

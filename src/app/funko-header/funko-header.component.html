@@ -1,4 +1,7 @@
 <div class="title" (click)="openCloseCamera()">Funko Poop !</div>
+<button class="menu" mat-icon-button aria-label="Example icon-button with a heart icon">
+  <mat-icon>menu</mat-icon>
+</button>
 <form class="search-form" [formGroup]="searchForm" (keydown.enter)="$event.preventDefault()">
   <div class="input-full-width">
     <input #inputQuery formControlName="query" (keydown.enter)="handleEnter($event)" />

@@ -9,7 +9,7 @@ import { FunkoStoreService } from '../shared/service/funko-store.service';
 })
 export class FunkoHeaderComponent implements OnInit {
   @Output()
-  barcodeAsked = new EventEmitter<any>();
+  toggleMenu = new EventEmitter<any>();
 
   @ViewChild('inputQuery', { read: ElementRef, static: true })
   inputQuery: ElementRef;
@@ -45,7 +45,7 @@ export class FunkoHeaderComponent implements OnInit {
 
     this.funkoStore.funkoList.subscribe(() => {
       if (this.barcodeOpen) {
-        this.openCloseCamera();
+        //this.openCloseCamera();
       }
     });
   }
@@ -61,8 +61,7 @@ export class FunkoHeaderComponent implements OnInit {
     }
   }
 
-  openCloseCamera() {
-    this.barcodeOpen = !this.barcodeOpen;
-    this.barcodeAsked.emit(this.barcodeOpen);
+  toggleTheMenu() {
+    this.toggleMenu.emit();
   }
 }

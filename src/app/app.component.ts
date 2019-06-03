@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material';
 import { SwUpdate } from '@angular/service-worker';
 import { Funko } from './shared/model/funko.model';
 import { FunkoStoreService } from './shared/service/funko-store.service';
@@ -9,6 +10,9 @@ import { FunkoStoreService } from './shared/service/funko-store.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  @ViewChild('sidenav', { static: true })
+  sidenav: MatSidenav;
+
   isMain = true;
   funkoList: Funko[] = [];
 
@@ -30,8 +34,13 @@ export class AppComponent implements OnInit {
     }
   }
 
-  barcodeHandler(event: any) {
-    this.isMain = !event;
+  toggleMenuHandler() {
+    this.sidenav.toggle();
+  }
+
+  barcodeHandler() {
+    this.isMain = !this.isMain;
+    this.sidenav.close();
   }
 
   trackElement(index: number, funko: Funko) {

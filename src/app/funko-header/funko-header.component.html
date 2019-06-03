@@ -1,5 +1,5 @@
-<div class="title" (click)="openCloseCamera()">Funko Poop !</div>
-<button class="menu" mat-icon-button aria-label="Example icon-button with a heart icon">
+<div class="title">Funko Poop !</div>
+<button class="menu" mat-icon-button (click)="toggleTheMenu()">
   <mat-icon>menu</mat-icon>
 </button>
 <form class="search-form" [formGroup]="searchForm" (keydown.enter)="$event.preventDefault()">

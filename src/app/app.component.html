@@ -1,6 +1,7 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="push" position="end">
-    <button (click)="barcodeHandler()">QRCode Reader</button>
+    <div>OWNED: {{ owned }}</div>
+    <button mat-raised-button (click)="barcodeHandler()">QRCode Reader</button>
   </mat-sidenav>
 
   <mat-sidenav-content>

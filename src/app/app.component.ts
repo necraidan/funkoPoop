@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
 
   isMain = true;
   funkoList: Funko[] = [];
+  owned: number;
 
   constructor(private funkoStore: FunkoStoreService, private swUpdate: SwUpdate) {}
 
@@ -23,6 +24,9 @@ export class AppComponent implements OnInit {
 
     this.funkoStore.funkoList.subscribe(fl => {
       this.funkoList = fl;
+      if (!this.owned) {
+        this.owned = fl.filter(f => f.owned).length;
+      }
     });
 
     if (this.swUpdate.isEnabled) {

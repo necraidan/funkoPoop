@@ -6,6 +6,11 @@
   mat-sidenav-container {
     background-color: unset;
     color: unset;
+    min-width: 200px;
+
+    mat-sidenav {
+      padding: 1em;
+    }
   }
 }
 

@@ -18,7 +18,7 @@ export class FunkoStoreService {
 
   constructor(private http: HttpClient) {
     this.queryWorker.onmessage = ({ data }) => {
-      this.funkoSub.next(JSON.parse(data));
+      this.funkoSub.next(data);
     };
   }
 
@@ -31,7 +31,7 @@ export class FunkoStoreService {
   }
 
   filterFunkoList(filter: string) {
-    this.queryWorker.postMessage(JSON.stringify({ filter }));
+    this.queryWorker.postMessage(filter);
   }
 
   setQuery(query: string) {

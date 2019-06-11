@@ -5,21 +5,19 @@ import { Rarity } from './shared/model/rarity.enum';
 /// <reference lib="webworker" />
 
 addEventListener('message', ({ data }) => {
-  const filter = JSON.parse(data).filter;
-
-  // FIX: Type Funko[] does not work
+  // FIX: Type Funko does not work
   const res = funkoJson.filter((funko: any) => {
     return (
-      funko.name.toLowerCase().includes(filter) ||
-      funko.category.toLowerCase().includes(filter) ||
-      funko.collection.toLowerCase().includes(filter) ||
-      funko.number.toLowerCase().includes(filter) ||
-      (funko.tags && funko.tags.length && funko.tags.includes(filter)) ||
-      (funko.rarities && funko.rarities.length && funko.rarities.includes(filter as Rarity)) ||
-      (funko.exclusivities && funko.exclusivities.length && funko.exclusivities.includes(filter as Exclusivity)) ||
-      (funko.barcode && funko.barcode.includes(filter))
+      funko.name.toLowerCase().includes(data) ||
+      funko.category.toLowerCase().includes(data) ||
+      funko.collection.toLowerCase().includes(data) ||
+      funko.number.toLowerCase().includes(data) ||
+      (funko.tags && funko.tags.length && funko.tags.includes(data)) ||
+      (funko.rarities && funko.rarities.length && funko.rarities.includes(data as Rarity)) ||
+      (funko.exclusivities && funko.exclusivities.length && funko.exclusivities.includes(data as Exclusivity)) ||
+      (funko.barcode && funko.barcode.includes(data))
     );
   });
 
-  postMessage(JSON.stringify(res));
+  postMessage(res);
 });

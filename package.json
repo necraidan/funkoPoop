@@ -33,6 +33,7 @@
     "quagga": "^0.12.1",
     "rxjs": "^6.5.2",
     "tslib": "^1.10.0",
+    "vanilla-tilt": "^1.7.0",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {

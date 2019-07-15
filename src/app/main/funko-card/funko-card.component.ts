@@ -1,5 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@angular/core';
 import { Funko } from 'src/app/shared/model/funko.model';
+
+declare var VanillaTilt: any;
 
 @Component({
   selector: 'funko-card',
@@ -11,7 +13,9 @@ export class FunkoCardComponent implements OnInit {
   @Input()
   funko: Funko;
 
-  constructor() {}
+  constructor(private El: ElementRef) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    VanillaTilt.init(this.El.nativeElement);
+  }
 }

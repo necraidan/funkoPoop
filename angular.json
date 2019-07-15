@@ -29,7 +29,7 @@
               },
               "src/styles/main.scss"
             ],
-            "scripts": ["node_modules/quagga/dist/quagga.min.js"],
+            "scripts": ["node_modules/quagga/dist/quagga.min.js", "node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"],
             "webWorkerTsConfig": "tsconfig.worker.json"
           },
           "configurations": {

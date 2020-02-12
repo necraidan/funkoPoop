@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
 import { SwUpdate } from '@angular/service-worker';
 import { Funko } from './shared/model/funko.model';
 import { FunkoStoreService } from './shared/service/funko-store.service';

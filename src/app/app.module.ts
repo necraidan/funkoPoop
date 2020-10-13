@@ -23,11 +23,11 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     ReactiveFormsModule,
     SharedModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, registrationStrategy: 'registerImmediately' }),
     MainModule,
-    DeviceDetectorModule.forRoot()
+    DeviceDetectorModule.forRoot(),
   ],
   providers: [{ provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
